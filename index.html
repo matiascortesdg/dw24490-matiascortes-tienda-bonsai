@@ -5,12 +5,209 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!--CSS La Ruta del Bonsai-->
     <link rel="stylesheet" href="style.css">
-    <title>Primeros pasos en Git</title>
-
+    
+    <!--Texto en mi Pensataña-->
+    <title>La ruta del Bonsai</title>
 
 </head>
+
+
 <body>
+    <!--NECESITAMOS AHCER UNA GRILLA DE FILAS Y COLUMNAS PARA DISTRIBUIR NUESTRO CONTENIDO-->
+
+    <!--Inicio de Header-->
+    <header class="header-container">
+           <!--Logo de la Ruta del Bonsai-->
+           <a href="index.html">
+
+            <!--Logo de Tienda de Bonsai-->
+                <img id="header-logo" src="media/logo.jpg" alt="Bonsai">
+            </a>
+            
+            <!--Inicio de menú de navegación-->
+            <nav>
+                <ul class="header-nav">
+                    
+                    <li class="header-nav-li">
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    
+                    <li class="header-nav-li">
+                    <a href="pages/productos.html">Productos</a>
+                    </li>
+                
+                    <li class="header-nav-li">
+                    <a href="pages/servicios.html">Servicios</a>
+                    </li>
+                
+                    <li class="header-nav-li">
+                    <a href="pages/nosotros.html">Nosotros</a>
+                    </li>
+                
+                    <li class="header-nav-li">
+                    <a href="pages/contacto.html">Contacto</a>
+                     </li>
+                </ul>
+            </nav>
+            <!--Fin de menú de navegación-->
     
+    </header>
+    <!--Fin de Header-->
+
+    <!--Inicio de section MAIN-->
+    <main class="grid-container">
+     
+        
+        <!--Inicio de section CAROUSEL-->
+        <section class="grid-item carousel">
+            <img class="carousel-img" src="media/carousel-2.jpg" alt="Dos ejemplares de bonsai">
+        </section>
+
+        <!--Inicio de MAIN CONTENT-->
+        <section class="grid-item main-content">
+            <h1 class="h1-main">La Ruta del Bonsai</h1>
+        </section>
+            <p class="grid-item p-description-intro">
+                <strong>Bonsai</strong> significa literalmente “cultivo en bandeja” <em>(“bon” = bandeja + “sai” = cultivar)</em>. Consiste en el arte de cultivar árboles y otras plantas en el espacio de una maceta para reproducirlos con todas sus características en un tamaño pequeño y proporcionado. Con creatividad, sentido estético y respeto por cada planta, el bonsaísta aplica distintas técnicas como el trasplante, la poda, el alambrado, el pinzado, etc., para mostrar la belleza natural de un árbol en su máxima expresión, modelando su forma para crear un estilo que nos recuerde una escena de la naturaleza.
+                <br>
+                La bandeja se refiere a una maceta de base ancha y poco profunda; también puede utilizarse una piedra laja a modo de bandeja. El bonsai, por tanto, es el árbol y la maceta, ambos deben estar armonía para corresponderse tanto por el tamaño, el estilo o porte del árbol. Como condición mínima, la maceta debe ser de cerámica (utilizar las de plástico sería un sacrilegio) e incluso determinadas especies deben ir por norma en determinados tipos de macetas; por ejemplo, las coníferas irán en macetas sin esmaltar, en cambio un arce se colocará en una que sea ovalada, amplia y esmaltada.
+            </p>
+       
+        <!--Fin de MAIN CONTENT-->
+        
+        <!--Inicio de PRODUCTOS-->
+
+        <!--Titulo de nuestros productos -->
+        <h3 class="h3-productos grid-item">Nuestros bonsais</h3>
+  
+        <section class="grid-item productos-container">
+
+            <section class="grid-item producto">
+              <img class="producto-img" src="media/producto-1.jpg" alt="Sample photo">
+              <div class="text">
+                <h4 class="h4-productos">Bonsai de interiores y exteriores</h4>
+                <p class="p-description">A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma..</p>
+                <button>Leer más</button>
+              </div>
+            </section>
+      
+            <section class="grid-item producto">
+              <img class="producto-img" src="media/producto-2.jpg" alt="Sample photo">
+              <div class="text">
+                <h4 class="h4-productos">Bonsai de interiores</h4>
+                <p class="p-description">La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
+               <button>Leer más</button>
+              </div>
+            </section>
+      
+            <section class="grid-item producto">
+              <img class="producto-img" src="media/producto-3.jpg" alt="Sample photo">
+              <div class="text">
+                <h4 class="h4-productos">Bonsai de exteriores</h4>
+                <p class="p-description">Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.</p>
+                <button>Leer mas</button>
+              </div>
+            </section>
+        
+            <section class="grid-item producto">
+                <img class="producto-img" src="media/producto-1.jpg" alt="Sample photo">
+                <div class="text">
+                    <h4 class="h4-productos">Estilos de bonsai</h4>
+                    <p class="p-description">A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma.</p>
+                    <button>Leer mas</button>
+                </div>
+             </section>
+      
+      
+        </section>
+        <!--Fin de PRODUCTOS-->  
+        
+        <!--Inicio de NOVEDADES-->
+
+        <!--Titulo de nuestros NOVEDADES -->
+        <h3 class="grid-item h3-novedades">Novedades</h3>
+  
+        <section class="grid-item novedades-container">
+
+            <section class="grid-item producto">
+              <img class="producto-img" src="media/novedades-1.jpg" alt="Sample photo">
+              <div class="text">
+                <h4 class="h4-productos">Taller de bonsais</h4>
+                <p class="p-description">Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.</p>
+                <button>Leer más</button>
+              </div>
+            </section>
+      
+            <section class="grid-item producto">
+              <img class="producto-img" src="media/novedades-2.jpg" alt="Sample photo">
+              <div class="text">
+                <h4 class="h4-productos">Feria De Otoño 2022</h4>
+                <p class="p-description">La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
+               <button>Leer más</button>
+              </div>
+            </section>
+      
+            <section class="grid-item producto">
+              <img class="producto-img" src="media/novedades-3.jpg" alt="Sample photo">
+              <div class="text">
+                <h4 class="h4-productos">Cursos online</h4>
+                <p class="p-description">Como todos los años los encuentros con los distintos profesionales del bonsai de la región nos juntamos para mostrar los mejores ejemplares de cada especie. La invitación es general para todos los eventos</p>
+                <button>Leer mas</button>
+              </div>
+            </section>
+        
+ 
+      
+        </section>
+        <!--Fin de Novedades-->  
+
+        <!--Inicio de sección de preguntas frecuentes -->
+        
+        <h3 class="grid-item h3-preguntas">Preguntas frecuentes</h3>
+
+        <section class="grid-item preguntasFrecuentes">
+             
+            <p class="grid-item p-description">¿Por qué trasplantar?</p>
+            <p class="grid-item p-description"><i>Cada árbol, planta puede ser transformada segun el contexto del lugar de hábitat.</i></p>
+            <p class="grid-item p-description">¿Cuándo trasplantar?</p>
+            <p class="grid-item p-description"><i>Cada especie tiene una estación y distintos tipos de crecimientos</i></p>
+            <p class="grid-item p-description">Instrucciones paso a paso</p>
+            <p class="grid-item p-description"><i>Para obtener mejores resultados siempre primero conviene aprender la filosofía del bonsai, los tipos de bonsai que existen, que elementos usar</i></p>
+            <p class="grid-item p-description">Herramientas necesarias</p>
+            <p class="grid-item p-description"><i>Es muy importante tener las hearramientas necesarias para hacer un bonsai, desde el recipiente, tijeas, palillos, alambres, etc.</i></p>
+            <p class="grid-item p-description">Selección de macetas</p>
+            <p class="grid-item p-description"><i>Es muy importante saber escoger el recipiente adecuado para nuestro bonsai dependiendo de la especie, el tamaño y el estilo.</i></p>
+         </section>
+        <!--Fin de sección de preguntas frecuentes -->
+
+    </main>
+    
+    <!--Fin de section MAIN-->
+
+    <a href="#header-logo">volver a inicio</a>
+
+    <!--Inicio de section FOOTER / legales y contacto en redes sociales-->
+    <section class="footer-container">
+    <footer class="footer">
+        <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
+        <a href="https://www.instagram.com/larutadelbonsai">
+            <img class="footer-icon" src="media/ico-instagram.png" alt="logo de instagram">
+        </a>
+        <a href="https://www.youtube.com/c/larutadelbonsai">
+            <img class="footer-icon" src="media/ico-youtube.png" alt="logo de youtube">
+            </a>
+        <p class="p-footer">
+            Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
+            La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
+        </p>
+    </footer>
+    <!--Fin de footer / legales y contacto en redes sociales-->
+    
+    </section>
+    <!--Fin de section FOOTER-->
+
+
 </body>
 </html>

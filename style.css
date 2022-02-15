@@ -224,8 +224,19 @@
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-weight:bold;
             padding: 1em;
-        }    
 
+        }   
+        
+        
+        /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
+
+        .header-nav-li > a:hover {
+
+            color: aquamarine;
+            text-shadow: #194e12cc 1px 30px 40px;
+
+        
+        }
 
 
 
@@ -238,6 +249,18 @@
         justify-content: flex-start;
 
     }
+
+            /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
+
+               /* LOGO */
+                    #header-logo:hover {
+                    margin-top: center;
+                    transform: scale(1.5);
+                    transition: all 2s ease-in-out;
+                    border:4px solid orange;
+    
+                    }
+
         
 
    /*SECTION CAROUSEL*/
@@ -318,14 +341,41 @@
     flex: 1 0 200px;
     margin: 1em 1em;
     border: 2px solid green;
+    background-size: 30%;
     
    
     }
 
     .producto .producto-img  {
     width: 100%;
-  
+    
+
     }
+
+
+            /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
+
+            .producto > img:hover {
+                margin-top: center;
+                animation: producto-img 2s;
+                transition: all 2s ease-in-out; 
+
+            
+            }
+
+            @keyframes producto-img {
+
+                0% {    width: 100%;
+
+                }            
+                100%{   width: 105%;
+                }
+
+            
+            }
+
+
+
 
     .producto .text {
     padding: 10px 20px 20px;
@@ -353,7 +403,20 @@
         grid-row: 4;
         grid-column: 1 / span 3;
 
+
     }
+
+    
+
+    /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
+    .h3-productos:hover {
+        background-color: yellow;
+    }
+       
+                    
+    
+
+    
 
     .h4-productos {
 

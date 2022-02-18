@@ -45,6 +45,45 @@
     
         }
 
+    }
+
+    /* Header MEDIA QUERIES */
+
+    @media screen and (min-width: 992px) {
+        .navbar-expand-lg .navbar-collapse {
+            display: flex;
+      
+            justify-content: flex-end;
+        }
+    }    
+
+    @media screen and (min-width: 640px) {
+        .navbar-brand {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        } 
+
+    }    
+
+    @media screen and (max-width: 380px) {
+        .navbar-brand {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        } 
+
+    }  
+
+       
+    .navbar-brand:hover {
+        text-shadow:1px 1px 2px #414940;
+
+    }
+
+
+
+
         .grid-container {
      
             display:flex;
@@ -67,20 +106,25 @@
         
         }
 
+
+/*
         .header-container {
         grid-template-rows:repeat( 1, auto);   
         flex-wrap: wrap;
         flex-direction: column;
         }
 
-        .header-nav {
+       /* .header-nav {
             flex-direction: column;
             display: flex;
             align-items: center;
         }
     
+    }*/
+        
 
 
+        /*
         .header-nav-li {
             display: inline;
             background-color: var(--background-inter-2);
@@ -93,11 +137,11 @@
             padding: 1vh;
 
         }    
-        
+        */
         
         
 
-    }    
+    
 
 
 
@@ -170,7 +214,7 @@
 
 
     /* HEADER */
-    
+/*    
         .header-container {
             color:#414940;
 
@@ -178,19 +222,19 @@
             padding:20px;
             border: 2px solid var(--background-inter-2);
    
-
+*/
             
-            /*tenemos que habilitar la grilla*/
+            /*tenemos que habilitar la grilla*
             display:flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 10px;
     
-            /*primeros pasos definir la cantidad de filas + tamaño*/
+            /*primeros pasos definir la cantidad de filas + tamaño*
             grid-template-rows:repeat( 3, 200px);
             border: 4px solid orange;
 
-            /*primeros pasos definir la cantidad de columnas*/
+            /*primeros pasos definir la cantidad de columnas*
             grid-template-columns: repeat(3, 1fr);
 
             /*Para evitar que se rompan podemos usar auto ó porcentajes (%) u otras medidas relaticas em o fracciones (fr) y asi podemos editar cada seccion*/
@@ -200,10 +244,10 @@
             /*Ahora agregamos las calles para separar cada cajita especie de margin entre celdas que se llama grid-gap o podemos usar column-gap o row-gap*/
 
             
-            grid-gap:20px;
+        /*    grid-gap:20px;
 
-        }
-
+        
+/*
         .header-nav {
 
         padding: 20px;
@@ -216,7 +260,7 @@
             grid-row: 1 / auto;
     
             }*/
-
+/*
         .header-nav-li {
             display: inline;
             text-transform: uppercase;
@@ -233,7 +277,7 @@
         .header-nav-li > a:hover {
 
             color: aquamarine;
-            text-shadow: #194e12cc 1px 30px 40px;
+            text-shadow: #194e12cc 1px 0px 40px;
 
         
         }
@@ -413,7 +457,9 @@
         background-color: yellow;
     }
        
-                    
+    .h3-novedades:hover {
+        background-color: yellow;
+    }
     
 
     
@@ -430,6 +476,19 @@
     
 }
 
+
+.h3-novedades {
+    height: fit-content;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin: 0px;
+    padding: 20px;
+    grid-row: 6;
+    grid-column: 1 / span 3;
+
+}
+
     .novedades-container {
         display: flex;
         flex-wrap: wrap;
@@ -439,17 +498,49 @@
 
     }
 
-    .h3-novedades {
-        height: fit-content;
-        background-color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: black;
-        margin: 0px;
-        padding: 20px;
-        grid-row: 6;
-        grid-column: 1 / span 3;
+    .novedades {
+        flex: 1 0 200px;
+        margin: 1em 1em;
+        border: 2px solid green;
+        background-size: 30%;
 
-    }    
+    }
+
+    .novedades .novedades-img  {
+        width: 100%;
+        
+    
+        }
+    
+    
+ /*section herramientas recomendadas*/
+ 
+
+
+.h3-herramientas {
+    height: fit-content;
+    background-color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    margin: 0px;
+    padding: 20px;
+    grid-row: 8;
+    grid-column: 1 / span 3;
+
+}
+
+.herramientas-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    grid-row: 9;
+    grid-column: 1 / span 3;
+
+
+
+}
+
+ 
 
 
        /* Preguntas frecuentes */

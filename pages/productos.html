@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
+    
+       
+    <!--Link Bootstrap antes que mi CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
     <!--Nuestro CSS-->
     <link rel="stylesheet" href="../style.css">
 
@@ -12,162 +17,198 @@
 </head>
 
 <body>
+    <!--NECESITAMOS AHCER UNA GRILLA DE FILAS Y COLUMNAS PARA DISTRIBUIR NUESTRO CONTENIDO-->
+
     <!--Inicio de Header-->
-    <header class="header-container">
-        <a href="../index.html">
-
-            <!--Logo de Tienda de Bonsai-->
-            <img id="header-logo" src="../media/logo.jpg" alt="Bonsai">
-        </a>
-
-        <!--Inicio de menú de navegación-->
-        <nav class="header-nav">
-            <ul class="header-nav-ul">
-                <li class="header-nav-ul-li">
-                    <a href="../index.html">Inicio</a>
-                </li>
-                <li class="header-nav-ul-li">
-                    <a href="productos.html">Productos</a>
-                </li>
-                <li class="header-nav-ul-li">
-                    <a href="servicios.html">Servicios</a>
-                </li>
-                <li class="header-nav-ul-li">
-                    <a href="nosotros.html">Nosotros</a>
-                </li>
-                <li class="header-nav-ul-li">
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
-        </nav>
-        <!--Fin de menú de navegación-->
-
+    <header class="header">
+        <section>
+                <!--Incluyo navbar de Bootstrap-->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <!--Agrego mi logo a la clase de bootstrap-->  
+                  <a class="navbar-brand" href="../index.html">
+                      <img src="../media/logo.jpg" alt=""> La Ruta del Bonsai</a>
+                 
+                      <!--Boton menu hamburguesa-->
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                 
+                    <!--Menu de navegacion bootstrap-->
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                      </li>
+                     
+                      <!--Por ahora dejo desahabilitado este feature
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>-->
+                                     
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+                  <!--Fin de navbar de bootstrap-->
+            </section>
     </header>
-    <!--Fin del Header-->
+    <!--Fin de Header-->
     
-    <main>
-    <!--Inicio de main -->
+    <!--Inicio de main -->    
+    <main class="grid-container">
+
 
         <!--Inicio de seccion de Carousel de Trabajos -->
-        <section class="carousel">
-
+        <section class="grid-item carousel">
             <img class="carousel-img" src="../media/carousel-3.jpg" alt="Dos ejemplares de bonsai">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-
-            <h1 class="h1-main">Nuestros Productos </h1>
-
-            <p class="p-carousel">
-                La mayoría de los aficionados del <strong>Bonsái</strong> comenzaron su afición con un árbol de Bonsái listo para usar, comprado en una tienda de Bonsái o recibido como regalo. Aunque no experimentará la diversión de crear su propio árbol, es una excelente manera de <em>comenzar y familiarizarse con el cuidado básico de los árboles Bonsai</em>. Una vez que te entusiasmes con el bonsái, eventualmente podrás aprender a crearlo tú mismo.
-            </p>
         </section>
-        <!--Fin de seccion de Carousel de Trabajos -->
+        
+        <!--Inicio de Intro Content-->
+        <section class="grid-item main-content">
+                <h1 class="h1-main">Nuestros Productos </h1>
+        </section>
+      
+        <p class="grid-item p-description-intro">
+            La mayoría de los aficionados del <strong>Bonsái</strong> comenzaron su afición con un árbol de Bonsái listo para usar, comprado en una tienda de Bonsái o recibido como regalo. Aunque no experimentará la diversión de crear su propio árbol, es una excelente manera de <em>comenzar y familiarizarse con el cuidado básico de los árboles Bonsai</em>. Una vez que te entusiasmes con el bonsái, eventualmente podrás aprender a crearlo tú mismo.
+        </p>
+
+        <!--Fin de seccion INTRO Content -->
+
+<!--Inicio de PRODUCTOS-->
+
+        <!--Titulo de nuestros productos -->
+        <h3 class="h3-productos grid-item">Nuestros bonsais</h3>
+  
+
 
 
         <!--Inicio de seccion de productos en venta / galeria -->
         <!--Titulo de nuestros productos -->
         <h3 class="h3-productos">Nuestros bonsais</h3>
+        
+        
         <section class="productos-container"> 
         
-            <section class="productos">
-                <!--Productos y sus descripciones -->
-                <div class="producto-grid first-item">
-                    <img class="productos-img" src="../media/producto-1.jpg" alt="Bonsai">
-                    <p class="h4-productos">Bonsai de interiores</p>
-                    <p class="p-description">
-                        La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.
-                        <br><i>conoce más >></i>
-                    </p>
+            
+            <section class="grid-item producto">
+                <img class="producto-img" src="../media/producto-1.jpg" alt="Sample photo">
+                <div class="text">
+                  <h4 class="h4-productos">Bonsai de interiores</h4>
+                  <p class="p-description">                        La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
+                  <button>Leer más</button>
                 </div>
-
-                <div class="producto-grid">
-                    <img class="productos-img" src="../media/producto-2.jpg" alt="Bonsai">
-                    <p class="h4-productos">Bonsai de exteriores</p>
-                    <p class="p-description">
-                        Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.
-                        <br><i>conoce más</i>
-                    </p>
+              </section>
+        
+              <section class="grid-item producto">
+                <img class="producto-img" src="../media/producto-2.jpg" alt="Sample photo">
+                <div class="text">
+                  <h4 class="h4-productos">Bonsai de exteriores</h4>
+                  <p class="p-description">Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.</p>
+                 <button>Leer más</button>
                 </div>
-                <div class="producto-grid last-item">
-                    <img class="productos-img" src="../media/producto-3.jpg" alt="Bonsai">
-                    <p class="h4-productos">Estilos de bonsai</p>
-                    <p class="p-description">
-                        A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma.
-                        <br><i>conoce más</i>
-                    </p>
+              </section>        
+        
+              <section class="grid-item producto">
+                <img class="producto-img" src="../media/producto-3.jpg" alt="Sample photo">
+                <div class="text">
+                  <h4 class="h4-productos">Bonsai de de interiores/exteriores</h4>
+                  <p class="p-description">A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma.</p>
+                  <button>Leer mas</button>
                 </div>
-                <div class="producto-grid">
-                    <img class="productos-img" src="../media/producto-2.jpg" alt="Bonsai">
-                    <p class="h4-productos">Bonsai de exteriores</p>
-                    <p class="p-description">
-                        Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.
-                        <br><i>conoce más</i>
-                    </p>
+              </section>
+                  
+              <section class="grid-item producto">
+                <img class="producto-img" src="../media/producto-1.jpg" alt="Sample photo">
+                <div class="text">
+                  <h4 class="h4-productos">Azaleas</h4>
+                  <p class="p-description">                        La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
+                  <button>Leer más</button>
                 </div>
-                <div class="producto-grid">
-                    <img class="productos-img" src="../media/producto-2.jpg" alt="Bonsai">
-                    <p class="h4-productos">Bonsai de exteriores</p>
-                    <p class="p-description">
-                        Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.
-                        <br><i>conoce más</i>
-                    </p>
+              </section>
+        
+              <section class="grid-item producto">
+                <img class="producto-img" src="../media/producto-2.jpg" alt="Sample photo">
+                <div class="text">
+                  <h4 class="h4-productos">Ficus</h4>
+                  <p class="p-description">Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.</p>
+                 <button>Leer más</button>
                 </div>
-                <div class="producto-grid">
-                    <img class="productos-img" src="../media/producto-2.jpg" alt="Bonsai">
-                    <p class="h4-productos">Bonsai de exteriores</p>
-                    <p class="p-description">
-                        Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.
-                        <br><i>conoce más</i>
-                    </p>
+              </section>        
+        
+              <section class="grid-item producto">
+                <img class="producto-img" src="../media/producto-3.jpg" alt="Sample photo">
+                <div class="text">
+                  <h4 class="h4-productos">Acer</h4>
+                  <p class="p-description">A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma.</p>
+                  <button>Leer mas</button>
                 </div>
-            </section>    
-        </section>
+              </section>
+                          
+        </section>     
         <!--Fin de seccion de productos / galeria -->
     
         
-        <!--Inicio de seccion de galeria de recipientes -->
 
-        <h3 class="h3-novedades">Recipientes</h3>
+        <!--Inicio de NOVEDADES-->
+
+        <!--Titulo NOVEDADES -->
+        <h3 class="h3-novedades">Novedades</h3>
+
+        <!--Inicio de novedades -->
+
         <section class="novedades-container">
-            <section class="novedades">
-                <!--Novedades y sus descripciones -->
-                <div class="novedades-grid first-item">
-                    <img class="novedades-img" src="../media/recipientes-1.jpg" alt="Bonsai">
-                    <p class="h4-novedades">Taller de bonsais</p>
-                    <p class="p-description">
+          
+          
+              <!--Novedades y sus descripciones -->
+                  <div class="grid-item novedades">
+                      <img class="novedades-img" src="../media/recipientes-1.jpg" alt="Bonsai">
+                      <p class="h4-novedades">Taller de bonsais</p>
+                      <p class="p-description">
                         Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.<br><i>Leer más</i>
-                    </p>
-                </div>
-                <div class="novedades-grid">
-                    <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
-                    <p class="h4-novedades">Feria de reconocimiento
-                    </p>
-                    <p class="p-description">
+                      </p>
+                  </div>
+                  
+                  <div class="grid-item novedades">
+                      <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
+                      <p class="h4-novedades">Feria de reconocimiento</p>
+                      <p class="p-description">
                         Como todos los años los encuentros con los distintos profesionales del bonsai de la región nos juntamos para mostrar los mejores ejemplares de cada especie. La invitación es general para todos los eventos.<br><i>Leer más</i>
-                    </p>
-                </div>
-                <div class="novedades-grid">    
-                    <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
-                    <p class="h4-novedades">Cursos online</p>
-                    <p class="p-description">
+                      </p>
+                  </div>
+                  
+                  <div class="grid-item novedades">    
+                      <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
+                      <p class="h4-novedades">Cursos online</p>
+                      <p class="p-description">
                         Cursos en línea con video conferencias de todas las técnicas esenciales del bonsái explicadas desde nivel principiante hasta nivel avanzado con profesionales.<br><i>Leer más</i>
-                    </p>
-                </div>
-                <div class="novedades-grid last-item">    
+                      </p>
+                  </div>
+                
+                  <div class="grid-item novedades">    
                     <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
-                    <p class="h4-novedades">Cursos online</p>
-                    <p class="p-description">
+                      <p class="h4-novedades">Cursos online</p>
+                      <p class="p-description">
                         Cursos en línea con video conferencias de todas las técnicas esenciales del bonsái explicadas desde nivel principiante hasta nivel avanzado con profesionales.<br><i>Leer más</i>
-                    </p>
-                </div>      
-            </section>
+                      </p>
+                  </div>      
+           
         </section>
         <!--Fin de seccion de galeria de recipientes -->
 
         <!--Inicio de sección de herramientas -->
-        <h3 class="h3-novedades">Herramientas recomendadas</h3>
+        <h3 class="h3-herramientas">Herramientas recomendadas</h3>
         <section class="herramientas-container">
             <section class="herramientas">
                 <!--Novedades y sus descripciones -->
@@ -204,20 +245,18 @@
 
     </main>
     <!--Fin de main -->
-    
-    <!--Fin de main -->        
+
     <a href="#header-logo">volver a inicio</a>
 
- 
-
-    <!--Inicio de footer / legales y contacto en redes sociales-->
+    <!--Inicio de section FOOTER / legales y contacto en redes sociales-->
+    <section class="footer-container">
     <footer class="footer">
         <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
         <a href="https://www.instagram.com/larutadelbonsai">
-            <img class="footer-icon" src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494468.png?token=exp=1643238690~hmac=218a619d70b317b078087595fc4f3e8f" alt="logo de instagram">
+            <img class="footer-icon" src="../media/ico-instagram.png" alt="logo de instagram">
         </a>
         <a href="https://www.youtube.com/c/larutadelbonsai">
-            <img class="footer-icon" src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494467.png?token=exp=1643238690~hmac=0cde0cc0fa92e5e90e8a336dd118bf5d" alt="logo de youtube">
+            <img class="footer-icon" src="../media/ico-youtube.png" alt="logo de youtube">
             </a>
         <p class="p-footer">
             Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
@@ -225,5 +264,17 @@
         </p>
     </footer>
     <!--Fin de footer / legales y contacto en redes sociales-->
+    
+    </section>
+    <!--Fin de section FOOTER-->
+
+    <!--Agrego link de Bootstrap para linkear JS componenetes-->
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    
+    
 </body>
 </html>

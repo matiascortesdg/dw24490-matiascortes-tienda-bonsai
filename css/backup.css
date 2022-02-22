@@ -1,6 +1,6 @@
-/* CSS BACKUP */
 
-/*CSS GRID LAYOUT LA RUTA DEL BONSAI*/
+
+/* GRAL CSS RESET */
 
 * {
     margin: 0;
@@ -8,843 +8,355 @@
     box-sizing: border-box;
 }
 
-/*CSS Mis posibles tipografías */
+/* TIPOGRAFIAS */
 
-    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
-
-/* POSIBLES VARIABLES CSS :ROOT */
-
-    :root {
-
-    /* Titulos */
-    --encabezados: 20px;
-
-    /* Parrafos */
-
-    /* Colores de Background */
-    --background-claro: #dde4da;
-    --background-inter:#dcb6a5;
-    --background-inter-2:#a1c9a1;
-    --background-oscuro:#414940;
-
-    /* Colores de Texto */
-    --resaltados: gold;
-    --epigrafes: grey;
-
-    /* Botones */
-
-    }
-
-
-/* MOBILE STYLES */
-    /*Rules - Media Type - Media Feature - Ordinary CSS rules*/
-    @media screen and (max-width: 480px) {
-
-        body {
-            background-color:rgb(227, 228, 224);
-    
-        }
-
-    }
-
-    /* Header MEDIA QUERIES */
-
-    @media screen and (min-width: 992px) {
-        .navbar-expand-lg .navbar-collapse {
-            display: flex;
-      
-            justify-content: flex-end;
-        }
-    }    
-
-    @media screen and (min-width: 640px) {
-        .navbar-brand {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        } 
-
-    }    
-
-    @media screen and (max-width: 380px) {
-        .navbar-brand {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        } 
-
-    }  
-
-       
-    .navbar-brand:hover {
-        text-shadow:1px 1px 2px #414940;
-
-    }
-
-
-
-
-        .grid-container {
-     
-            display:flex;
-      
-            flex-wrap: wrap;
-            flex-direction: column;
-    
-            /*primeros pasos definir la cantidad de filas + tamaño*/
-     
-            border: 4px solid orange;
-        
-            /*primeros pasos definir la cantidad de columnas*/
-    
-            /*primeros pasos definir la cantidad de filas + tamaño*/
-            
-            border: 4px solid orange;
-        
-            /*primeros pasos definir la cantidad de columnas*/
-          
-        
-        }
-
-
-/*
-        .header-container {
-        grid-template-rows:repeat( 1, auto);   
-        flex-wrap: wrap;
-        flex-direction: column;
-        }
-
-       /* .header-nav {
-            flex-direction: column;
-            display: flex;
-            align-items: center;
-        }
-    
-    }*/
-        
-
-
-        /*
-        .header-nav-li {
-            display: inline;
-            background-color: var(--background-inter-2);
-          
-            text-transform: uppercase;
-            text-decoration: none;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight:bold;
-            width: fit-content;
-            padding: 1vh;
-
-        }    
-        */
-        
-        
-
-    
-
-
-
-/* TABLET STYLES */
-
-    /*Rules - Media Type - Media Feature - Ordinary CSS rules*/
-    @media screen and (min-width: 481px) and (max-width: 980px) {
-
-        body {
-            background-color:rgb(227, 228, 224);
-    
-        }
-    
-
-    }    
-
-
-/* DESKTOP STYLES */
-
-
-    /*Rules - Media Type - Media Feature - Ordinary CSS rules*/
-    @media screen and (min-width: 981px) {
-
-        body {
-            background-color:rgb(227, 228, 224);
-    
-        }
-    
-
-    }    
-
-    /* BODY */    
-    
-    /* MAIN */
-
-    .grid-container {
-
-    
-        /*tenemos que habilitar la grilla*/
-        display:grid;
-    
-        /*primeros pasos definir la cantidad de filas + tamaño*/
-        grid-template-rows:repeat(1, 200px);
-        border: 4px solid orange;
-
-        /*primeros pasos definir la cantidad de columnas*/
-        grid-template-columns: repeat(3, 1fr);
-
-    /*Para evitar que se rompan podemos usar auto ó porcentajes (%) u otras medidas relaticas em o fracciones (fr) y asi podemos editar cada seccion*/
-
-    /*Podemos usar la funcion repeat(3) para evitar repeticion de funciones*/
-
-    /*Ahora agregamos las calles para separar cada cajita especie de margin entre celdas que se llama grid-gap o podemos usar column-gap o row-gap*/
-
-    grid-gap:20px;
-
-
-
-    /*y si queremos que alguna de las celdas ocupe 2 lugares o más podemos usar la funcion aplicado un clase extra a esa celda ejemple first-item */
-
-}
-    .grid-item {
-    border: 2px solid orangered;
-    
-    }    
-
-
-
-
-
-
-    /* HEADER */
-/*    
-        .header-container {
-            color:#414940;
-
-            background-color: var(--background-inter-2);
-            padding:20px;
-            border: 2px solid var(--background-inter-2);
-   
-*/
-            
-            /*tenemos que habilitar la grilla*
-            display:flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 10px;
-    
-            /*primeros pasos definir la cantidad de filas + tamaño*
-            grid-template-rows:repeat( 3, 200px);
-            border: 4px solid orange;
-
-            /*primeros pasos definir la cantidad de columnas*
-            grid-template-columns: repeat(3, 1fr);
-
-            /*Para evitar que se rompan podemos usar auto ó porcentajes (%) u otras medidas relaticas em o fracciones (fr) y asi podemos editar cada seccion*/
-
-            /*Podemos usar la funcion repeat(3) para evitar repeticion de funciones*/
-
-            /*Ahora agregamos las calles para separar cada cajita especie de margin entre celdas que se llama grid-gap o podemos usar column-gap o row-gap*/
-
-            
-        /*    grid-gap:20px;
-
-        
-/*
-        .header-nav {
-
-        padding: 20px;
-        flex:wrap;    
-   
-       
-        }
-            /*grid-area: nav;
-            grid-column: 1 / span 5;
-            grid-row: 1 / auto;
-    
-            }*/
-/*
-        .header-nav-li {
-            display: inline;
-            text-transform: uppercase;
-            text-decoration: none;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight:bold;
-            padding: 1em;
-
-        }   
-        
-        
-        /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
-
-        .header-nav-li > a:hover {
-
-            color: aquamarine;
-            text-shadow: #194e12cc 1px 0px 40px;
-
-        
-        }
-
-
+/* CSS HEADER */
 
     /* LOGO */
-        #header-logo {
-        /* habilito el flexbox */
-        display: flex;
-        margin:20px;
-        /*quiero que el logo  de todo en todo el ancho del que lo contiene, en este caso que vaya a la izquierda */
-        justify-content: flex-start;
 
-    }
 
-            /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
-
-               /* LOGO */
-                    #header-logo:hover {
-                    margin-top: center;
-                    transform: scale(1.5);
-                    transition: all 2s ease-in-out;
-                    border:4px solid orange;
+/* NAVIGATION */
     
-                    }
-
-        
-
-   /*SECTION CAROUSEL*/
-
-   .carousel {
-
-    background-color: white;
-    border:2px solid rgb(236, 23, 23);
-    grid-row: 1;
-    grid-column: 1 / span 3;
-
-}
-
-    .carousel-img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    .navbar {
+        font-size: 16px;
+        font-weight: 500;
 
     }
 
-
-    .main-content {
-        height: fit-content;
-        grid-row: 2;
-        grid-column: 1 / span 3;
-        
-    }
-
-    .h1-main {
-        color: cadetblue;
-        background-color:white;
-        font-size: 32px;
-        margin: 0px;
-        padding: 10px 0;
-        text-decoration: none;
-        align-items: center;
-        text-align: center;
-
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-   
+    .navbar-light .navbar-nav .nav-link {
+        padding: 0 10px;
+        transition: 0.3 ease;
 
     }
-      
-
-
-    .p-description-intro {
-
-        margin: 0px;
-        padding: 2em 1em;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        text-align: center;
     
-        grid-row: 3;
-        grid-column: 1 / span 3;
- 
+    .navbar-light .navbar-nav .nav-link:hover,
+    .navbar-light .navbar-nav .nav-link.active {
+        color: orange;
+        text-shadow: 0 1.5em 50px;
 
     }
 
-    strong {
-
-        background-color:yellow;
-
-    }
-
-/* SECCION DE PRODUCTOS */
-
-
-    .productos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    grid-row: 5;
-    grid-column: 1 / span 3;
-
-    }
-
-    .producto {
-    flex: 1 0 200px;
-    margin: 1em 1em;
-    border: 2px solid green;
-    background-size: 30%;
+    /* Mobile NAV */
     
-   
-    }
+    .navbar-light .navbar-toggler {
 
-    .producto .producto-img  {
-    width: 100%;
-    
-
-    }
-
-
-            /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
-
-            .producto > img:hover {
-                margin-top: center;
-                animation: producto-img 2s;
-                transition: all 2s ease-in-out; 
-
-            
-            }
-
-            @keyframes producto-img {
-
-                0% {    width: 100%;
-
-                }            
-                100%{   width: 105%;
-                }
-
-            
-            }
-
-
-
-
-    .producto .text {
-    padding: 10px 20px 20px;
-    background-color: white;
-  
-    }
-
-    .producto .text > button {
-
-    background-color: var(--background-inter-2);
-    border: 0;
-    color: green;
-    padding: 10px;
-    width: 100%;
-    
-    }
-
-    .h3-productos {
-        height: fit-content;
-        background-color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: black;
-        margin: 0px;
-        padding: 20px;
-        grid-row: 4;
-        grid-column: 1 / span 3;
-
-
-    }
-
-    
-
-    /*PSEUDO CLASES DE ANIMACION - TRANSFORMACION */
-    .h3-productos:hover {
-        background-color: yellow;
-    }
+        outline:none;
        
-    .h3-novedades:hover {
-        background-color: yellow;
-    }
-    
-
-    
-
-    .h4-productos {
-
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: black;
-    border-bottom: 2px solid black;
-
-    padding: 10px;
-    
-}
-
-
-.h3-novedades {
-    height: fit-content;
-    background-color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    margin: 0px;
-    padding: 20px;
-    grid-row: 6;
-    grid-column: 1 / span 3;
-
-}
-
-    .novedades-container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        grid-row: 7;
-        grid-column: 1 / span 3;
-
     }
 
-    .novedades {
-        flex: 1 0 200px;
-        margin: 1em 1em;
-        border: 2px solid green;
-        background-size: 30%;
-
+    .navbar-light .navbar-toggler:hover {
+        border: none;
+        outline:none;
+        background-color: orange;
     }
 
-    .novedades .novedades-img  {
-        width: 100%;
-        
-    
+    @media only screen and (max-width:991px) {
+        #navbarNav > ul {
+            margin: 1em;
+            justify-content: flex-end;
+            align-items: flex-end;
+            text-align: center;
+
         }
     
     
- /*section herramientas recomendadas*/
- 
+    }
 
 
-.h3-herramientas {
-    height: fit-content;
-    background-color: white;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: black;
-    margin: 0px;
-    padding: 20px;
-    grid-row: 8;
-    grid-column: 1 / span 3;
 
+/* CAROUSEL */
+
+.carousel-item {
+    width: 100%;
+    background-position:top 0px center;
 }
 
-.herramientas-container {
+
+
+
+
+/* MAIN INTRO */
+
+    hr {
+        width:80px;
+        height: 20px;
+        background-color:orange;
+
+    }
+
+
+
+    .hr-2 {
+
+        width:80px;
+        height: 20px;
+        background-color:green;
+
+    }
+
+
+    .h2 {
+ 
+        font-size: 4rem;
+        font-weight: 200;
+    }
+
+
+    .h3 {
+    
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .h5 {
+        font-family: 'Roboto',sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+
+
+.container {
+
+    margin: 0 auto;
+}
+
+/* SECTION PRODUCTO */
+
+.row {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    grid-row: 9;
-    grid-column: 1 / span 3;
+    justify-content: space-evenly;
+    align-items: flex start;
+}
 
 
+.button {
+    font-family: 'Roboto',sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color: lightgreen;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
 
 }
 
- 
+.button:hover {
+    font-family: 'Roboto',sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    background-color:orange;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+}
+
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+
+}
 
 
-       /* Preguntas frecuentes */
 
-       .preguntasFrecuentes {
-        height: fit-content;
-        background-color: white;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: black;
-        margin: 0px;
-        padding: 20px;
-        grid-row: 9;
-        grid-column: 1 / span 3;
-    
-        }
-    
-        .h3-preguntas {
-    
-            height: fit-content;
-            background-color: white;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            color: black;
-            margin: 0px;
-            padding: 20px;
-            grid-row: 8;
-            grid-column: 1 / span 3;
 
-        }
-    
-    
-        a  {
-    
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: left;
-     
-            padding: 20px;
-    
-        }
-    
 
+
+
+
+/* SECTION NOVEDADES */
+
+
+
+
+/* SECTION FAQ */
+
+
+
+
+/* FOOTER */
 
            /* Footer */
         
-        .footer {
-        height: fit-content;
-        border:2px solid black;
-        margin:0px;
-        display: flex;
-        justify-content: space space-around;
-        flex-direction: column;
-        align-items: center;
-         }
-
-        .footer-icon {
-
-            max-width: 48px;
+           .footer {
+            height: fit-content;
+            background-color: #89a095;
+             /*border:2px solid black;*/
+            margin:0px;
             display: flex;
-            justify-content: space-around;
-     
-  
-        }
-
-        b {
-
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            border:black;
-            margin: 0px;    
-        
-        }    
-
-        .p-footer {
-            margin: 10px;
-            padding: 20px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
-        
-        }   
-        
-        i {
-
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: lighter;
-            text-align: left;
-            color: rgb(143, 143, 143);
-            padding: 5px;
-            
-        }
-
-    /*CSS Page / Productos */
-
-    .herramientas-container {
-        width: 100%;
-        color:#414940;
-        background-color: white;
-        border:black;
-        margin: 20px;
-        /*Habilito Flexbox para que centre los elementos de productos*/
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .herramientas {
-            
-        width: 90%;
-
-        display: flex;
-
-        /*Habilito Flexbox para que distribuya  los elementos de productos horizontalmente */
-        justify-content: space-between;
-        /*Habilito Flexbox para que distribuya  los elementos de productos verticalmente*/
-        align-items: flex-start;
-        /*con Flex Wrapped le vamos estar atento a que los elementos no desborden del body */
-        flex-wrap: wrap;
-
-    }
-
-    .herramientas-grid {
-                       
-        width: 10%;
-        /*habilito el flexbox para las contendores de mis imagenes con sus descripciones*/
-        display: flex;
-
-        /*Habilito Flexbox para que distribuya  los elementos de productos horizontalmente */
-        justify-content: space-around;
-        flex-direction: row;
-        align-items: center;
-
-    }
-
-    .herramientas-img {
-        width: 80%;
-        margin: 10px;
-        padding: 10px;
-    
-    }
-
-
-    /* CSS para Servicios */
-
-    
-    .experiencias-container {
-        width: 100%;
-        color:#414940;
-        background-color: white;
-        border:black;
-        margin: 20px;
-        /*Habilito Flexbox para que centre los elementos de productos*/
-        display: flex;
-        justify-content: space-around;
-
-    }
-
-    .experiencias {
-            
-        width: 100%;
-
-        display: flex;
-
-        /*Habilito Flexbox para que distribuya  los elementos de productos horizontalmente */
-        justify-content: center;
-        /*Habilito Flexbox para que distribuya  los elementos de productos verticalmente*/
-        align-items: flex-start;
-        /*con Flex Wrapped le vamos estar atento a que los elementos no desborden del body */
-        flex-wrap: wrap;
-
-    }
-
-    .experiencias-grid {
-                        
-        width: 30%;
-        margin: 10px;
-        /*habilito el flexbox para las contendores de mis imagenes con sus descripciones*/
-        display: flex;
-
-        /*Habilito Flexbox para que distribuya  los elementos de productos horizontalmente */
-        justify-content: space-between;
-        flex-direction: column;
-
-    }
-
-    .herramientas-img {
-        width: 80%;
-        margin: 10px;
-        padding: 10px;
-        
-    }
-
-
-
-    /* CSS de Nosotros */
-
-    .nosotros-container {
-        width: 100%;
-        color:#414940;
-        background-color: white;
-        border:black;
-        margin: 20px;
-        /*Habilito Flexbox para que centre los elementos de productos*/
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-
-
-    }
-
-    .nosotros-img {
-        width: 89%;
-        margin: 10px;
-        padding: 10px;
-
-        
-    }
-
-    .nosotros-grid {
-                                
-        width: 60%;
-        margin: 10px;
-        /*habilito el flexbox para las contendores de mis imagenes con sus descripciones*/
-        display: flex;
-
-        /*Habilito Flexbox para que distribuya  los elementos de productos horizontalmente */
-        justify-content: flex-start;
-        flex-direction: column;
-        
-
-    }  
-
-    .comunidad-container {
-
-        width: 100%;
-        color:#414940;
-        background-color: white;
-        border:black;
-        margin: 20px;
-        /*Habilito Flexbox para que centre los elementos de productos*/
-        display: flex;
-        justify-content: flex-end;
-        flex-direction: row;
-
-    }
-
-        .comunidad {
-                                
-            width: 60%;
-            margin: 10px;
-            /*habilito el flexbox para las contendores de mis imagenes con sus descripciones*/
-            display: flex;
-    
-            /*Habilito Flexbox para que distribuya  los elementos de productos horizontalmente */
-            justify-content: flex-start;
+            justify-content: space space-around;
             flex-direction: column;
+            align-items: center;
+             }
+    
+            .footer-icon {
+    
+                max-width: 48px;
+                display: flex;
+                justify-content: space-around;
+ 
+         
+      
+            }
+    
+            b {
+    
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border:black;
+                margin: 0px;    
             
-        }
-
-
-/* CSS de Contacto*/
-
-    .contacto-container {
+            }    
     
-        background-color: white;
-        border:black;
-        width: 100%;
-        margin: 20px;
+            .p-footer {
+                margin: 10px;
+                padding: 20px;
+                font-family: 'Roboto',sans-serif;
+                color: black;
+            
+            }   
+            
+            i {
     
-    }
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-weight: lighter;
+                text-align: left;
+                color: rgb(143, 143, 143);
+                padding: 5px;
+                
+            }
 
-    .consulta {
 
-        background-color: white;
-        width: 20%;
-        height: 3em;
-        margin: 20px;
-        border: 2px solid black;
-    }
+            /*SERVICIOS*/
 
-    .consulta-grande {
 
-        background-color: white;
-        width: 60%;
-        height: 25em;
-        margin: 20px;
-        border: 2px solid black;
 
-    }
 
-    .sticky-consulta {
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 16px;
-        background-color: white;
-        border:2px solid black;
-        
-        width:fit-content;
-        position:sticky;
-        top:0;
-        
-        align-self: right;
-        margin:20px;
-        padding:20px;
-  
+            /*PAGINA NOSOTROS*/
+                .vision-valores .vision-valores-box {
+                    display: flex;
+                    justify-content:flex-start;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding-bottom: 5em;
+                    width:100%;
 
-    }
+                }
+
+                @media screen and (max-width: 991px) {
+                    .vision-valores .vision-valores-box {
+
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        width:50%;
+                    }
+
+                }
+
+                @media screen and (max-width: 991px) {
+                    .vision-valores .vision-valores-box {
+
+                        display: flex;
+                        justify-content: flex-start;
+                        flex-direction: column;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        width:100%;
+                    }
+
+                }
+                        
+                
+
+                .vision-valores .vision-valores-img {
+                   
+                    width:100%;
+                    margin-right: 40px;
+
+                } 
+
+                .vision-valores img {
+                    width:100%;
+         
+
+                }
+
+                .vision-valores .vision-details {
+                   
+                    width:50%;
+                    margin-right: 40px;
+
+                } 
+
+                @media screen and (max-width: 991px) {
+                    .vision-valores .vision-details {
+                       
+                        width:100%;
+                        margin-right: 40px;
+                        padding-top: 5em;
+                        } 
+                    }
+
+
+
+
+            /* PAGINA CONTACTO */
+
+
+            #sticky-button {
+              
+                color: black;
+                padding: 10px 20px;
+                border-radius: 4px;
+              
+            }
+              
+            .sticky-btn {
+                position: fixed;
+                background-color: orange;
+                padding: 10px;
+                bottom: 323px;
+                right: 60px;
+                border: none;
+                font-family: sans-serif;
+            }
+
+            .sticky-btn:hover {
+                position: fixed;
+                background-color: green;
+                padding: 10px;
+                bottom: 323px;
+                right: 60px;
+                border: none;
+                font-family: sans-serif;
+           
+                color: orange;
+                text-shadow: 0 1.5em 50px;
+                transition:0.3s ease;
+            }
+
+            @media only screen and (max-width:640px) {
+                .sticky-btn {
+                display:none;
+                }    
+            }

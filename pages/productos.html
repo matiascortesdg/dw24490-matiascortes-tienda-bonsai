@@ -4,269 +4,349 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-       
-    <!--Link Bootstrap antes que mi CSS-->
+
+    <!--Bootstrap CSS 5.1-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-
-    <!--Nuestro CSS-->
-    <link rel="stylesheet" href="../style.css">
-
+    <!--Bootstrap CSS 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <!--Titulo de mi web-->
     <title>Productos</title>
+
 </head>
 
 <body>
-    <!--NECESITAMOS AHCER UNA GRILLA DE FILAS Y COLUMNAS PARA DISTRIBUIR NUESTRO CONTENIDO-->
-
-    <!--Inicio de Header-->
-    <header class="header">
-        <section>
-                <!--Incluyo navbar de Bootstrap-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <!--Agrego mi logo a la clase de bootstrap-->  
-                  <a class="navbar-brand" href="../index.html">
-                      <img src="../media/logo.jpg" alt=""> La Ruta del Bonsai</a>
-                 
-                      <!--Boton menu hamburguesa-->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                 
-                    <!--Menu de navegacion bootstrap-->
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                      </li>
-                     
-                      <!--Por ahora dejo desahabilitado este feature
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>-->
-                                     
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-                  <!--Fin de navbar de bootstrap-->
-            </section>
-    </header>
-    <!--Fin de Header-->
-    
-    <!--Inicio de main -->    
-    <main class="grid-container">
-
-
-        <!--Inicio de seccion de Carousel de Trabajos -->
-        <section class="grid-item carousel">
-            <img class="carousel-img" src="../media/carousel-3.jpg" alt="Dos ejemplares de bonsai">
-        </section>
-        
-        <!--Inicio de Intro Content-->
-        <section class="grid-item main-content">
-                <h1 class="h1-main">Nuestros Productos </h1>
-        </section>
-      
-        <p class="grid-item p-description-intro">
-            La mayoría de los aficionados del <strong>Bonsái</strong> comenzaron su afición con un árbol de Bonsái listo para usar, comprado en una tienda de Bonsái o recibido como regalo. Aunque no experimentará la diversión de crear su propio árbol, es una excelente manera de <em>comenzar y familiarizarse con el cuidado básico de los árboles Bonsai</em>. Una vez que te entusiasmes con el bonsái, eventualmente podrás aprender a crearlo tú mismo.
-        </p>
-
-        <!--Fin de seccion INTRO Content -->
-
-<!--Inicio de PRODUCTOS-->
-
-        <!--Titulo de nuestros productos -->
-        <h3 class="h3-productos grid-item">Nuestros bonsais</h3>
   
+  <!--Inicio de Header-->
+  <header>
 
+    <!--Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+      <div class="container-fluid">
+              <!--Logo-->
+              <a class="navbar-brand" href="../index.html">
+                  <img id="header-logo" src="../media/logo.png" alt="">La Ruta del Bonsai</a>
 
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <!--Inicio de seccion de productos en venta / galeria -->
-        <!--Titulo de nuestros productos -->
-        <h3 class="h3-productos">Nuestros bonsais</h3>
-        
-        
-        <section class="productos-container"> 
-        
-            
-            <section class="grid-item producto">
-                <img class="producto-img" src="../media/producto-1.jpg" alt="Sample photo">
-                <div class="text">
-                  <h4 class="h4-productos">Bonsai de interiores</h4>
-                  <p class="p-description">                        La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
-                  <button>Leer más</button>
-                </div>
-              </section>
-        
-              <section class="grid-item producto">
-                <img class="producto-img" src="../media/producto-2.jpg" alt="Sample photo">
-                <div class="text">
-                  <h4 class="h4-productos">Bonsai de exteriores</h4>
-                  <p class="p-description">Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.</p>
-                 <button>Leer más</button>
-                </div>
-              </section>        
-        
-              <section class="grid-item producto">
-                <img class="producto-img" src="../media/producto-3.jpg" alt="Sample photo">
-                <div class="text">
-                  <h4 class="h4-productos">Bonsai de de interiores/exteriores</h4>
-                  <p class="p-description">A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma.</p>
-                  <button>Leer mas</button>
-                </div>
-              </section>
-                  
-              <section class="grid-item producto">
-                <img class="producto-img" src="../media/producto-1.jpg" alt="Sample photo">
-                <div class="text">
-                  <h4 class="h4-productos">Azaleas</h4>
-                  <p class="p-description">                        La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
-                  <button>Leer más</button>
-                </div>
-              </section>
-        
-              <section class="grid-item producto">
-                <img class="producto-img" src="../media/producto-2.jpg" alt="Sample photo">
-                <div class="text">
-                  <h4 class="h4-productos">Ficus</h4>
-                  <p class="p-description">Un concepto erróneo común acerca de los árboles Bonsai es que deben mantenerse en el interior. La mayoría de los árboles deben colocarse al aire libre, expuestos a las cuatro estaciones, con cambios de temperatura y una humedad relativamente alta.</p>
-                 <button>Leer más</button>
-                </div>
-              </section>        
-        
-              <section class="grid-item producto">
-                <img class="producto-img" src="../media/producto-3.jpg" alt="Sample photo">
-                <div class="text">
-                  <h4 class="h4-productos">Acer</h4>
-                  <p class="p-description">A lo largo de los años, se han avanzado muchos estilos para clasificar los árboles Bonsai, que se asemejan mucho a las circunstancias de la naturaleza. Estos estilos están abiertos a la interpretación y creatividad personal, lo que significa que los árboles no necesariamente tienen que adaptarse a ninguna forma.</p>
-                  <button>Leer mas</button>
-                </div>
-              </section>
-                          
-        </section>     
-        <!--Fin de seccion de productos / galeria -->
+          <!--NavBar-->
+          <div class="collapse navbar-collapse" id="navbarNav">
+              
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                      <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link active" href="productos.html">Productos</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="servicios.html">Servicios</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="nosotros.html">Nosotros</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <!--Fin de Navigation-->
     
-        
+    <!--Carousel-->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
 
-        <!--Inicio de NOVEDADES-->
+        <div class="carousel-item active">
+          <img src="../media/carousel-3.jpg" class="w-100" alt="...">
+        </div>
 
-        <!--Titulo NOVEDADES -->
-        <h3 class="h3-novedades">Novedades</h3>
+        <div class="carousel-item">
+          <img src="../media/carousel-4.jpg" class="w-100" alt="...">
+        </div>
 
-        <!--Inicio de novedades -->
+        <div class="carousel-item">
+          <img src="../media/carousel-6.jpg" class="w-100" alt="...">
+        </div>
 
-        <section class="novedades-container">
-          
-          
-              <!--Novedades y sus descripciones -->
-                  <div class="grid-item novedades">
-                      <img class="novedades-img" src="../media/recipientes-1.jpg" alt="Bonsai">
-                      <p class="h4-novedades">Taller de bonsais</p>
-                      <p class="p-description">
-                        Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.<br><i>Leer más</i>
-                      </p>
-                  </div>
-                  
-                  <div class="grid-item novedades">
-                      <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
-                      <p class="h4-novedades">Feria de reconocimiento</p>
-                      <p class="p-description">
-                        Como todos los años los encuentros con los distintos profesionales del bonsai de la región nos juntamos para mostrar los mejores ejemplares de cada especie. La invitación es general para todos los eventos.<br><i>Leer más</i>
-                      </p>
-                  </div>
-                  
-                  <div class="grid-item novedades">    
-                      <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
-                      <p class="h4-novedades">Cursos online</p>
-                      <p class="p-description">
-                        Cursos en línea con video conferencias de todas las técnicas esenciales del bonsái explicadas desde nivel principiante hasta nivel avanzado con profesionales.<br><i>Leer más</i>
-                      </p>
-                  </div>
-                
-                  <div class="grid-item novedades">    
-                    <img class="novedades-img" src="../media/recipientes-1.jpg" alt="">
-                      <p class="h4-novedades">Cursos online</p>
-                      <p class="p-description">
-                        Cursos en línea con video conferencias de todas las técnicas esenciales del bonsái explicadas desde nivel principiante hasta nivel avanzado con profesionales.<br><i>Leer más</i>
-                      </p>
-                  </div>      
-           
-        </section>
-        <!--Fin de seccion de galeria de recipientes -->
+      </div>
+  </div>
+  <!--Fin de Carousel-->
 
-        <!--Inicio de sección de herramientas -->
-        <h3 class="h3-herramientas">Herramientas recomendadas</h3>
-        <section class="herramientas-container">
-            <section class="herramientas">
-                <!--Novedades y sus descripciones -->
-                <div class="herramientas-grid first-item">
-                    <img class="herramientas-img" src="../media/herramientas-1.jpg" alt="Bonsai">
-                    <p class="h4-novedades">Tijeras</p>
-                </div>
-                <div class="herramientas-grid">
-                    <img class="herramientas-img" src="../media/herramientas-1.jpg" alt="">
-                    <p class="h4-novedades">Palillos</p>
-                </div>
-                <div class="herramientas-grid">    
-                    <img class="herramientas-img" src="../media/herramientas-1.jpg" alt="">
-                    <p class="h4-novedades">Alambre</p>
-                </div>
-                <div class="herramientas-grid">    
-                    <img class="herramientas-img" src="../media/herramientas-1.jpg" alt="">
-                    <p class="h4-novedades">Alicates</p>
-                </div>
-                <div class="herramientas-grid">    
-                    <img class="herramientas-img" src="../media/herramientas-1.jpg" alt="">
-                    <p class="h4-novedades">Pinzas</p>
-                </div>
-                <div class="herramientas-grid last-item">    
-                    <img class="herramientas-img" src="../media/herramientas-1.jpg" alt="">
-                    <p class="h4-novedades">Pico</p>
-                </div>          
-            </section>
-        </section>
-        <!--Fin de sección de herramientas -->
+</header>
+<!--Fin de Header-->  
 
-    
+<!--Main-->
+<main>
+  <!--Section Intro-->
+  <section class="container">
+    <dl class="row">
+        <dt class="col-md-12 p-5">
+            <h1 class="text-center">Nuestros Productos</h1>
+            <hr class="mx-auto">
+        </dt>
 
-
-    </main>
-    <!--Fin de main -->
-
-    <a href="#header-logo">volver a inicio</a>
-
-    <!--Inicio de section FOOTER / legales y contacto en redes sociales-->
-    <section class="footer-container">
-    <footer class="footer">
-        <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
-        <a href="https://www.instagram.com/larutadelbonsai">
-            <img class="footer-icon" src="../media/ico-instagram.png" alt="logo de instagram">
-        </a>
-        <a href="https://www.youtube.com/c/larutadelbonsai">
-            <img class="footer-icon" src="../media/ico-youtube.png" alt="logo de youtube">
-            </a>
-        <p class="p-footer">
-            Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
-            La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
+        <p class="lead col-12 text-center">
+          Los aficionados del <strong>Bonsái</strong> comenzaron su afición con un árbol de Bonsái listo para usar, comprado en una tienda de Bonsái o recibido como regalo. Aunque no experimentará la diversión de crear su propio árbol, es una excelente manera de <em>comenzar y familiarizarse con el cuidado básico de los árboles Bonsai</em>. Una vez que te entusiasmes con el bonsái, eventualmente podrás aprender a crearlo tú mismo.
+        <br>
+          Asimismo uno comienza a valorar los recipientes elegidos para cada bonsai. Éstos no son sólo depositos de nuestro espécimen, sino que le dan una identidad única relacionandose con su entorno.
         </p>
-    </footer>
-    <!--Fin de footer / legales y contacto en redes sociales-->
+
+    </dl>
+  </section>
+  <!--Fin de Intro-->
+
+  <!--Inicio de Productos Bonsai-->
+  <section class="productos">
+
+    <!--Bonsai de Interiores-->
+    <div class="container text-center mt-5 mb-5">
+      <h3 class="h3">Bonsais de Interiores</h3>
+      <hr class="hr-2 mx-auto">
+      <p>La mayoría de los bonsáis deben colocarse al aire libre, donde estén expuestos a las cuatro estaciones naturales como lo están los árboles normales. Solo las plantas tropicales y subtropicales pueden sobrevivir en interiores donde las temperaturas son altas y estables durante todo el año.</p>
+    </div>
     
-    </section>
-    <!--Fin de section FOOTER-->
+    <div class="row mx-auto container-fluid">
+
+      <!--Producto 1-->
+      <div class="product text-center col-lg-4 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="../media/product-bonsai-interior-2.jpg" alt="Bonsai Ficus">
+      
+        <h5 class="card-title">Bonsai Ficus</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Producto 2-->
+      <div class="product text-center col-lg-4 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="../media/product-bonsai-interior-2.jpg" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Suculenta</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Producto 3-->
+      <div class="product text-center col-lg-4 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="../media/product-bonsai-interior-2.jpg" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Arbol de jade</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>  
+
+    </div>
+    <!--Fin de Bonsai de Interiores-->
+
+    <!--Bonsai de Exteriores-->
+    <div class="container text-center mt-5 py-5">
+      <h3 class="h3">Bonsais de Exteriores</h3>
+      <hr class="hr-2 mx-auto">
+      <p>Nuestros bonsáis de exteriores necesitan el balance adecuado de las 4 estaciones del año. Por eso es muy importante saber el clima de la zona y el lugar elegido para nuestro bonsai sabiendo lo que necesita de luz, humedad, temperatura y fertilidad.</p>
+    </div>
+    
+    <div class="row mx-auto container-fluid">
+
+      <!--Producto 1-->
+      <div class="product text-center col-lg-4 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="../media/product-bonsai-interior-2.jpg" alt="Bonsai Ficus">
+      
+        <h5 class="card-title">Juniper</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Producto 2-->
+      <div class="product text-center col-lg-4 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="../media/product-bonsai-interior-2.jpg" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Maple</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Producto 3-->
+      <div class="product text-center col-lg-4 col-md-4 col-12">
+        <img class="img-fluid mb-3" src="../media/product-bonsai-interior-2.jpg" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Acer</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>  
+
+    </div>
+
+  </section>
+  <!--Fin de Productos Bonsai-->
+
+
+  <!--Inicio de Recipientes-->
+  <section class="productos">
+
+    <!--Recipientes-->
+    <div class="container text-center mt-5 py-5">
+      <h3 class="h3">Recipientes</h3>
+      <hr class="hr-2 mx-auto">
+      <p>Es común creer que cualquier contenedor es adecuado para nuestros bonsai. Pero no todos toman la dimensión de que es el recipiente adecuado va a moldear nuestras raices, hará de sostén a su estructura y no menos importante hará que luzca mejor.</p>
+    </div>
+    
+    <div class="row mx-auto container-fluid">
+
+      <!--Recipiente 1-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/recipiente-1.png" alt="Bonsai Ficus">
+      
+        <h5 class="card-title">Oval</h5>
+        <p>Ideal para suculentas</p>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Recipiente 2-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/recipiente-2.png" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Jarrón</h5>
+        <p>Ideal para Ficus</p>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Recipiente 3-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/recipiente-3.png" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Cresta</h5>
+        <p>Ideal para azaleas</p>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>  
+
+      <!--Recipiente 4-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/recipiente-4.png" alt="Bonsai Ficus">
+      
+          <h5 class="card-title">Cuenco</h5>
+          <p>Ideal para arce y juniper</p>
+          <button class="button btn mb-5">Ver producto</button>
+      </div>  
+
+    </div>
+    
+  </section>
+
+  <!--Fin de Recipientes-->  
+
+
+  <!--Section de Herramientas-->
+  <section class="productos">
+
+    <!--Recipientes-->
+    <div class="container text-center mt-5 py-5">
+      <h3 class="h3">Herramientas</h3>
+      <hr class="hr-2 mx-auto">
+      <p>Trabajar con las herramientas adecuadas hace posible que nuestros especimenes esten en optimas condiciones para ser plantados, podados cuando sea necesario cons las tijeras y alicates para no dañar nuestras ramas y raíces así como el uso del alambre adecuado para dar forma a nuestro bonsai y guiar su crecimiento.</p>
+    </div>
+    
+    <div class="row mx-auto container-fluid">
+
+      <!--Herramienta 1-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/herramientas-1.jpg" alt="Bonsai Ficus">
+      
+        <h5 class="card-title">Tijeras</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Herramienta 2-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/herramientas-1.jpg" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Palillos</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+
+      <!--Herramienta 3-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/herramientas-1.jpg" alt="Bonsai Ficus">
+
+        <h5 class="card-title">Alambre</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>  
+
+      <!--Herramienta 4-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/herramientas-1.jpg" alt="Bonsai Ficus">
+      
+        <h5 class="card-title">Alicates</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div>
+      
+      <!--Herramienta 5-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/herramientas-1.jpg" alt="Bonsai Ficus">
+            
+        <h5 class="card-title">Pinzas</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div> 
+
+    
+      <!--Herramienta 6-->
+      <div class="product text-center col-lg-3 col-md-6 col-12">
+        <img class="img-fluid mb-3" src="../media/herramientas-1.jpg" alt="Bonsai Ficus">
+                
+        <h5 class="card-title">Pico</h5>
+        <button class="button btn mb-5">Ver producto</button>
+      </div> 
+
+
+
+    </div>
+  </section>
+  <!--Fin de Herramientas-->
+
+
+
+
+</main>
+<!--Fin de MAIN-->
+
+<a href="#header-logo">volver a inicio</a>
+
+<!--FOOTER / legales y redes sociales-->
+
+<section class="footer-container">
+
+  <footer class="footer">
+    <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
+
+    <ul class="list-unstyled list-inline text-center">
+
+      <li class="list-inline-item">
+        <a href="https://www.instagram.com/larutadelbonsai">
+          <img class="footer-icon" src="../media/ico-instagram.png" alt="logo de instagram">
+        </a>
+      </li>
+
+      <li class="list-inline-item">
+        <a href="https://www.youtube.com/c/larutadelbonsai">
+          <img class="footer-icon" src="../media/ico-youtube.png" alt="logo de youtube">
+        </a>
+      </li>      
+      
+      <p class="p-footer">
+        Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
+        La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
+      </p>
+
+    </ul>
+  </footer>
+
+</section>
+<!--Fin de Footer-->
+
 
     <!--Agrego link de Bootstrap para linkear JS componenetes-->
 

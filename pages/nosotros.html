@@ -4,182 +4,226 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <!--Nuestro CSS-->
-    <link rel="stylesheet" href="../style.css">
 
-    <title>La ruta del Bonsai | Nosotros</title>
+    <!--Bootstrap CSS 5.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Bootstrap CSS 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Nosotros</title>
+
 </head>
 
 <body>
-     <!--Inicio de Header-->
-     <header class="header">
-        <section>
-                <!--Incluyo navbar de Bootstrap-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <!--Agrego mi logo a la clase de bootstrap-->  
-                  <a class="navbar-brand" href="../index.html">
-                      <img src="../media/logo.jpg" alt=""> La Ruta del Bonsai</a>
-                 
-                      <!--Boton menu hamburguesa-->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+   
+    <!--Inicio de Header-->
+    <header>
+
+        <!--Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+            <div class="container-fluid">
+                    <!--Logo-->
+                    <a class="navbar-brand" href="../index.html">
+                        <img id="header-logo" src="../media/logo.png" alt="">La Ruta del Bonsai</a>
+    
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                 
-                    <!--Menu de navegacion bootstrap-->
-                    <ul class="navbar-nav">
-                      <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
-                      </li>
-                     
-                      <!--Por ahora dejo desahabilitado este feature
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>-->
-                                     
+                </button>
+    
+                <!--NavBar-->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="productos.html">Productos</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="servicios.html">Servicios</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link active" href="nosotros.html">Nosotros</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
                     </ul>
-                  </div>
                 </div>
-              </nav>
-                  <!--Fin de navbar de bootstrap-->
-            </section>
-        </header>
-        <!--Fin de Header-->
+            </div>
+        </nav>
+        <!--Fin de Navigation-->
+      
+        <!--Carousel-->
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
     
+                <div class="carousel-item active">
+                    <img src="../media/carousel-5.jpg" class="w-100" alt="...">
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="../media/carousel-2.jpg" class="w-100" alt="...">
+                </div>
+    
+                <div class="carousel-item">
+                    <img src="../media/carousel-4.jpg" class="w-100" alt="...">
+                </div>
+    
+            </div>
+        </div>
+        <!--Fin de Carousel-->
+
+    </header>
+    <!--Fin de Header-->
+
+
+    <!--Inicio de MAIN-->
     <main>
-    <!--Inicio de main -->
-
-        <!--Inicio de seccion de Carousel de Trabajos -->
-        <section class="carousel">
-
-            <img class="carousel-img" src="../media/carousel-5.jpg" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-
-            <h1 class="h1-main">Acerca de nosotros</h1>
-
-            <p class="p-carousel">
-                <strong>Bonsai</strong> significa literalmente “cultivo en bandeja” <em>(“bon” = bandeja + “sai” = cultivar)</em>. Consiste en el arte de cultivar árboles y otras plantas en el espacio de una maceta para reproducirlos con todas sus características en un tamaño pequeño y proporcionado. Con creatividad, sentido estético y respeto por cada planta, el bonsaísta aplica distintas técnicas como el trasplante, la poda, el alambrado, el pinzado, etc., para mostrar la belleza natural de un árbol en su máxima expresión, modelando su forma para crear un estilo que nos recuerde una escena de la naturaleza.
+        <!--Section Intro-->
+        <section class="container">
+            <dl class="row">
+                <dt class="col-md-12 p-5">
+                    <h1 class="text-center">Acerca de nosotros</h1>
+                <hr class="mx-auto">
+                </dt>
+    
+                <p class="lead col-12 text-center">
+                La mayoría de los aficionados del <strong>Bonsái</strong> comenzaron su afición con un árbol de Bonsái listo para usar, comprado en una tienda de Bonsái o recibido como regalo. Aunque no experimentará la diversión de crear su propio árbol, es una excelente manera de <em>comenzar y familiarizarse con el cuidado básico de los árboles Bonsai</em>. Una vez que te entusiasmes con el bonsái, eventualmente podrás aprender a crearlo tú mismo.
                 <br>
-                La bandeja se refiere a una maceta de base ancha y poco profunda; también puede utilizarse una piedra laja a modo de bandeja. El bonsai, por tanto, es el árbol y la maceta, ambos deben estar armonía para corresponderse tanto por el tamaño, el estilo o porte del árbol. Como condición mínima, la maceta debe ser de cerámica (utilizar las de plástico sería un sacrilegio) e incluso determinadas especies deben ir por norma en determinados tipos de macetas; por ejemplo, las coníferas irán en macetas sin esmaltar, en cambio un arce se colocará en una que sea ovalada, amplia y esmaltada.
-            </p>
+                Asimismo uno comienza a valorar los recipientes elegidos para cada bonsai. Éstos no son sólo depositos de nuestro espécimen, sino que le dan una identidad única relacionandose con su entorno.
+                </p>
+    
+            </dl>
         </section>
-        <!--Fin de seccion de Carousel de Trabajos -->
-          
-        <!--Inicio de seccion de acerca de nosotros -->
+        <!--Fin de Intro-->
 
-        <section class="nosotros-container">
-            <div>
-                <img class="nosotros-img" src="../media/novedades-1.jpg" alt="Bonsai">
-            </div>
-            
-            <!--Descripcion de nosotros -->
 
-            <div class="nosotros-grid">
-                <p class="h4-novedades">Vision</p>
-                <p class="p-description">
-                    Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.<br><i>Leer más</i>
-                </p>
+        <!--Inicio Vision y Valores-->
+        <section class="vision-valores container-fluid mx-auto">
+            <div class="vision-valores-box container-fluid col-md-10 col-12">
+                <div class="vision-valores-img">
+                    <img src="../media/nosotros-1.png" alt=""> 
+                </div>
+
+                <div class="vision-details">
+                    <h5>Vision</h5>
+                    <p>La ruta del bonsai nació de Cristian Goncalvez como una idea de retiro luego de una larga tarea como docente de una escuela secundaria en la ciudad de Hurlingham, zona oeste de la provincia de Buenos Aires, Argentina. En sus inicios, Cristian se había recibido de la universidad de agronomía de la UBA y siempre quiso tener su propio vivero e invernadero. La pasión por la botánica se reavivó luego de que se jubilara de la docencia e investigó sobre el arte del bonsai japones. Ahora tiene su propio refugio verde, como le gusta decir donde comparte experiencias, conocimientos.</p>
+                    <br>
+                    <h5>Valores</h5>
+                    <p>Por sobre todo respeto a la cultura del bonsai y a la naturaleza.</p>
+                    <br>
+                    <h5>Filosofia</h5>
+                    <p>Conectar y compartir experiencias con personas que disfruten de este arte</p>
+
+                </div>
             </div>
-                
-            <div class="nosotros-grid">
-                <p class="h4-novedades">Valores</p>
-                <p class="p-description">
-                    Como todos los años los encuentros con los distintos profesionales del bonsai de la región nos juntamos para mostrar los mejores ejemplares de cada especie. La invitación es general para todos los eventos.<br><i>Leer más</i>
-                </p>
-            </div>
-                
-            <div class="nosotros-grid">    
-                <p class="h4-novedades">Nuestra filosofía</p>
-                <p class="p-description">
-                        Cursos en línea con video conferencias de todas las técnicas esenciales del bonsái explicadas desde nivel principiante hasta nivel avanzado con profesionales.<br><i>Leer más</i>
-                </p>
-            </div>    
         </section>
-        <!--Fin de seccion de nosotros -->
+        <!--Fin de Vision y Valores-->
+
+            <!--Inicio de Nuestra Comunidad-->
+
+                <!--Bonsai Argentina-->
+                <section class="vision-valores container-fluid mx-auto">
+                    <div class="vision-valores-box container-fluid col-md-10 col-12">
+                        <div class="vision-valores-img">
+                            <img src="../media/Comunidad-1.jpg" alt=""> 
+                        </div>
         
-        <h3 class="h3-novedades">Nuestra comunidad</h3>
-        <!--Inicio section nuestra comunidad-->
-            <section class="comunidad-container">
-                <div class="camunidad">
-                    <div>
-                        <img class="nosotros-img" src="../media/novedades-1.jpg" alt="Bonsai">
+                        <div class="vision-details">
+                            <h5>Bonsai Argentina</h5>
+                            <p>Somos una gran comunidad en todo el territorio argentino donde compartimos la pasión por el arte del bonsai. Formamos parte de una de la comunidades más grande del continente americano fuera de Japón.Y compartimos la pasión por el arte y respeto a la técnica del bonsai.
+                            <br>
+                            Una vez por año se realiza en evento Bonsai Argentina donde se programa cada año en una provincia distinta con el fin de federalizar el evento y conocer cómo se adaptan las distintas especies en los distintos ambientes de nuestra geografía argentina y así compartir conocimiento y experiencias.   
+                            </p>
+        
+                        </div>
                     </div>
-                    <div class="nosotros-grid">
-                        <p class="h4-novedades">Bonsai Argentina</p>
-                        <p class="p-description">
-                            Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.<br><i>Leer más</i>
-                        </p>
+                </section>
+                <!--Fin de Bonsai Argentina-->
+
+                <!--Bonsai por el Mundo-->
+                <section class="vision-valores container-fluid mx-auto">
+                    <div class="vision-valores-box container-fluid col-md-10 col-12">
+                        <div class="vision-valores-img">
+                            <img src="../media/Comunidad-2.jpg" alt=""> 
+                        </div>
+        
+                        <div class="vision-details">
+                            <h5>Bonsai por el Mundo</h5>
+                            <p>Somos una gran comunidad en todo el mundo donde compartimos la pasión por el arte del bonsai.
+                            <br>
+                            Existen varios eventos y exhibiciones en todo el mundo con su sede más importante en Japon. Una vez por año se realiza en evento Bonsai Argentina donde se programa cada año en una provincia distinta con el fin de federalizar el evento y conocer cómo se adaptan las distintas especies en los distintos ambientes de nuestra geografía argentina y así compartir conocimiento y experiencias.   
+                            </p>
+        
+                        </div>
                     </div>
-                </div>
+                </section>
+                <!--Fin de Bonsai por el Mundo-->
 
-                <div class="camunidad">
-                    <div>
-                        <img class="nosotros-img" src="../media/novedades-1.jpg" alt="Bonsai">
+                <!--Historia, filosofía y Arte del bonsai-->
+                <section class="vision-valores container-fluid mx-auto">
+                    <div class="vision-valores-box container-fluid col-md-10 col-12">
+                        <div class="vision-valores-img">
+                            <img src="../media/Comunidad-3.jpg" alt=""> 
+                        </div>
+        
+                        <div class="vision-details">
+                            <h5>Hablemos de bonsai</h5>
+                            <p>Forma parte de un proyecto de una serie de encuentros donde hablamos de mantener viva la cultura del bonsai. Para esto en cada uno de los encuentros, algunos de manera virtual y otros presenciales cada uno comparte algun aspecto cultural que lo conecta con la filosofía bonsai ya se desde la cerámica y creación de vasijas, contenedores, recipientes, ornamentos y caligrafía.
+        
+                        </div>
                     </div>
-                    <div class="nosotros-grid">
-                        <p class="h4-novedades">Bonsai por el mundo</p>
-                        <p class="p-description">
-                            Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.<br><i>Leer más</i>
-                        </p>
-                    </div>
-                </div>
+                </section>
+                <!--Fin de Historia, filosófía y arte del bonsai-->
+            <!--Fin de Section de Comunidad-->    
 
-                <div class="camunidad">
-                    <div>
-                        <img class="nosotros-img" src="../media/novedades-1.jpg" alt="Bonsai">
-                    </div>
-                    <div class="nosotros-grid">
-                        <p class="h4-novedades">Historia, arte y filosofia del bonsai</p>
-                        <p class="p-description">
-                            Los invito a participar de talleres precenciales durante el la temporada de primavera donde vamos a seleccionar especies de bonsai juniperos adecaudas para nuestro proyecto para luego hacer un seguimiento durante la temporada. Vamos a utlizar las hearramienta adecuadas además del asesoramiento paso a paso para lograr un sano ejemplar.<br><i>Leer más</i>
-                        </p>
-                    </div>
-                </div>
-
-
-            </section>
-        <!--Fin section nuestra comunidad-->  
-
-
-    </main>
-    <!--Fin de main -->
+</main>
+<!--Fin de main -->
     
     
-    <a href="#header-logo">volver a inicio</a>
+<a href="#header-logo">volver a inicio</a>
 
- 
+<!--FOOTER / legales y redes sociales-->
 
-    <!--Inicio de footer / legales y contacto en redes sociales-->
+<section class="footer-container">
+
     <footer class="footer">
-        <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
-        <a href="https://www.instagram.com/larutadelbonsai">
-            <img class="footer-icon" src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494468.png?token=exp=1643238690~hmac=218a619d70b317b078087595fc4f3e8f" alt="logo de instagram">
-        </a>
-        <a href="https://www.youtube.com/c/larutadelbonsai">
-            <img class="footer-icon" src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494467.png?token=exp=1643238690~hmac=0cde0cc0fa92e5e90e8a336dd118bf5d" alt="logo de youtube">
-            </a>
+      <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
+  
+      <ul class="list-unstyled list-inline text-center">
+  
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/larutadelbonsai">
+            <img class="footer-icon" src="../media/ico-instagram.png" alt="logo de instagram">
+          </a>
+        </li>
+  
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/c/larutadelbonsai">
+            <img class="footer-icon" src="../media/ico-youtube.png" alt="logo de youtube">
+          </a>
+        </li>      
+        
         <p class="p-footer">
-            Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
-            La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
+          Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
+          La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
         </p>
+  
+      </ul>
     </footer>
-    <!--Fin de footer / legales y contacto en redes sociales-->
+  
+  </section>
+  <!--Fin de Footer-->
 
     <!--Agrego link de Bootstrap para linkear JS componenetes-->
 

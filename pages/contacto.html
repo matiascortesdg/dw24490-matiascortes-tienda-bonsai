@@ -4,124 +4,183 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-    <!--Nuestro CSS-->
-    <link rel="stylesheet" href="../style.css">
+
+    <!--Bootstrap CSS 5.1-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--Bootstrap CSS 4.6-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">    
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
 
     <title>Contacto</title>
-</head>
+
+  </head>
 
 <body>
-     <!--Inicio de Header-->
-     <header class="header">
-        <section>
-                <!--Incluyo navbar de Bootstrap-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                  <!--Agrego mi logo a la clase de bootstrap-->  
+  
+    <!--Inicio de Header-->
+    <header>
+
+      <!--Navigation-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+          <div class="container-fluid">
+                  <!--Logo-->
                   <a class="navbar-brand" href="../index.html">
-                      <img src="../media/logo.jpg" alt=""> La Ruta del Bonsai</a>
-                 
-                      <!--Boton menu hamburguesa-->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNav">
-                 
-                    <!--Menu de navegacion bootstrap-->
-                    <ul class="navbar-nav">
+                      <img id="header-logo" src="../media/logo.png" alt="">La Ruta del Bonsai</a>
+  
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+  
+              <!--NavBar-->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                  
+                  <ul class="navbar-nav ml-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                          <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                       </li>
+  
                       <li class="nav-item">
-                        <a class="nav-link" href="productos.html">Productos</a>
+                          <a class="nav-link" href="productos.html">Productos</a>
                       </li>
+  
                       <li class="nav-item">
-                        <a class="nav-link" href="servicios.html">Servicios</a>
+                          <a class="nav-link" href="servicios.html">Servicios</a>
                       </li>
+  
                       <li class="nav-item">
-                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                          <a class="nav-link" href="nosotros.html">Nosotros</a>
                       </li>
+  
                       <li class="nav-item">
-                        <a class="nav-link" href="contacto.html">Contacto</a>
+                          <a class="nav-link active" href="contacto.html">Contacto</a>
                       </li>
-                     
-                      <!--Por ahora dejo desahabilitado este feature
-                      <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a></li>-->
-                                     
-                    </ul>
-                  </div>
-                </div>
-              </nav>
-                  <!--Fin de navbar de bootstrap-->
-            </section>
-        </header>
-        <!--Fin de Header-->
+                  </ul>
+              </div>
+          </div>
+      </nav>
+      <!--Fin de Navigation-->
     
-    <main>
-    <!--Inicio de main -->
+      <!--Carousel-->
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+  
+              <div class="carousel-item active">
+                  <img src="../media/carousel-1.png" class="w-100" alt="...">
+              </div>
+  
+              <div class="carousel-item">
+                  <img src="../media/carousel-6.jpg" class="w-100" alt="...">
+              </div>
+  
+              <div class="carousel-item">
+                  <img src="../media/carousel-5.jpg" class="w-100" alt="...">
+              </div>
+  
+          </div>
+      </div>
+      <!--Fin de Carousel-->
 
-        <!--Inicio de seccion de Carousel de Trabajos -->
-        <section class="carousel">
+  </header>
+  <!--Fin de Header-->
 
-            <img class="carousel-img" src="../media/carousel-2.jpg" alt="Dos ejemplares de bonsai">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+  <main>
 
-            <h1 class="h1-main">Como podemos ayudarte</h1>
+          <!--Section Intro-->
+          <section class="container">
+            <dl class="row">
+                  <dt class="col-md-12 p-5">
+                    <h1 class="text-center">Cómo podemos ayudarte</h1>
+                    <hr class="mx-auto">
+                  </dt>
 
-        </section>
-        <!--Fin de seccion de Carousel de Trabajos -->
+                  <p class="lead col-12 text-center">
+                   Si tienes dudas sobre alguno de los contenidos y productos o si tienes quieres una consulta especifica no dudes de escribirnos y te responderemos a la brevedad. También puedes comunicarte por teléfono o escribirnos un mail como a ti te resulte más convenientes. Si no estamos en el taller te responderemos rapidamente. 
+                  </p>
 
+            </dl>
+          </section>
+          <!--Fin de Intro-->
+
+          <!--Section de consulta-->
+          <div class="mb-3 container-fluid col-lg-6 col-md-8 col-12">
+              <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+              <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Ingrese su nombre y apellido">
+          </div>
+          
+          <div class="mb-3 container-fluid col-lg-6 col-md-8 col-12">
+              <label for="formGroupExampleInput2" class="form-label">Un correo electronico</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="ingrese su correo electronico">
+          </div>
+          
+          <div class="mb-3 container-fluid col-lg-6 col-md-8 col-12">
+              <label for="formGroupExampleInput2" class="form-label">Telefono o celular</label>
+              <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese un telefono de contacto">
+          </div>
         
-        <div class="sticky-consulta">
-            <p>Podemos ayudarte?</p>
-        </div>    
+          <div class="mb-3 container-fluid col-lg-6 col-md-8 col-12">
+                <label for="formGroupExampleInput2" class="form-label">Asunto</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Ingrese asunto o tema relacionado">
+          </div>
 
-        
-        <!--Titulo de centro de ayuda -->
-        <h3 class="h3-productos">Necesitas contactarnos</h3>
-        
-        <!--Inicio de section de Contacto -->
-        <section class="contacto-container"> 
-            <p class="p-description">Ingrese su nombre y apellido</p>
-                <div class="consulta"></div>
-            <p class="p-description">Ingrese correo electronico</p>
-                <div class="consulta"></div>
-            <p class="p-description">Ingrese un telefono de contacto</p>
-                <div class="consulta"></div>
-            <p class="p-description">Ingrese asunto de consulta</p>
-                <div class="consulta"></div>
-                <div class="consulta-grande"></div>
-        </section>
-        <!--Fin de section de contacto -->
+      </div>
+
+      <div class="container-fluid mb-3 container-fluid col-lg-6 col-md-8 col-12">
+      
+        <form>
+          <div class="form-group">
+            <label for="comment">Consulta</label>
+            <textarea class="form-control" rows="10" id="comment"></textarea>
+          </div>
+        </form>
+      </div>      
+
     
-    </main>
-    <!--Fin de main -->
+  </main>
+  <!--Fin de main -->
+
+  <div id="sticky-button">
+    <button class="button sticky-btn">Mandanos un mensaje
+      <br>
+      +54 9 11 5555 4444</button>
+    </div>
+       
+  <a href="#header-logo">volver a inicio</a>
     
-    <!--Fin de main -->        
-    <a href="#header-logo">volver a inicio</a>
 
+<!--FOOTER / legales y redes sociales-->
 
-    <!--Inicio de footer / legales y contacto en redes sociales-->
+<section class="footer-container">
+
     <footer class="footer">
-        <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
-        <a href="https://www.instagram.com/larutadelbonsai">
-            <img class="footer-icon" src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494468.png?token=exp=1643238690~hmac=218a619d70b317b078087595fc4f3e8f" alt="logo de instagram">
-        </a>
-        <a href="https://www.youtube.com/c/larutadelbonsai">
-            <img class="footer-icon" src="https://cdn-icons.flaticon.com/png/512/4494/premium/4494467.png?token=exp=1643238690~hmac=0cde0cc0fa92e5e90e8a336dd118bf5d" alt="logo de youtube">
-            </a>
+      <p class="p-footer"><b>Seguinos en nuestras redes</b></p>
+  
+      <ul class="list-unstyled list-inline text-center">
+  
+        <li class="list-inline-item">
+          <a href="https://www.instagram.com/larutadelbonsai">
+            <img class="footer-icon" src="../media/ico-instagram.png" alt="logo de instagram">
+          </a>
+        </li>
+  
+        <li class="list-inline-item">
+          <a href="https://www.youtube.com/c/larutadelbonsai">
+            <img class="footer-icon" src="../media/ico-youtube.png" alt="logo de youtube">
+          </a>
+        </li>      
+        
         <p class="p-footer">
-            Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
-            La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
+          Tel. +54 9 11-3456-7890 ✉ larutadelbonsai@gmail.com | 
+          La Ruta del Bonsai | Copyright © 2022 Todos los derechos reservados | Desarrollado por Matias Cortes Work
         </p>
+  
+      </ul>
     </footer>
-    <!--Fin de footer / legales y contacto en redes sociales-->
-
+  
+  </section>
+  <!--Fin de Footer-->
 
     <!--Agrego link de Bootstrap para linkear JS componenetes-->
 

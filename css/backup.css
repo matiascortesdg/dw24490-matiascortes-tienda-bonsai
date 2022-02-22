@@ -1,9 +1,11 @@
+/* CSS BACKUP */
+
 /*CSS GRID LAYOUT LA RUTA DEL BONSAI*/
 
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 
 /*CSS Mis posibles tipografías */

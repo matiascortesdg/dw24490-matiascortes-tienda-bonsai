@@ -96,7 +96,7 @@
                             }
 
                             .nav-link.active {
-                                color: nth(colores,4);
+                                color: nth($colores,4);
                                 text-shadow: 0 1.5em 50px;
                             }    
                             

@@ -1,0 +1,162 @@
+@import'../base/variables';
+@import'buttons';
+
+/* MAIN */
+
+
+main { 
+    
+
+    .container {
+        margin: 0 auto;
+    }
+
+    hr {
+        width:80px;
+        height: 20px;
+        background-color:orange;
+
+    }
+
+
+
+    .hr-2 {
+
+        width:80px;
+        height: 20px;
+        background-color:green;
+
+    }
+
+
+    .h2 {
+ 
+        font-size: 4rem;
+        font-weight: 200;
+    }
+
+
+    .h3 {
+    
+        font-size: 2rem;
+        font-weight: 100;
+    }
+
+    .h5 {
+        font-family: 'Roboto',sans-serif;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+
+    /* CAROUSEL */
+
+    .carousel-item {
+        width: 100%;
+        background-position:top 0px center;
+    }
+
+    
+    /* SECTION INTRO */
+
+    .row {
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex start;
+    }
+
+    
+    /* SECTION PRODUCTO */
+    
+    .product img {
+        transition: 0.3s all;
+    }
+    
+    .product:hover img {
+        opacity: 0.7;
+    
+    }
+    
+        
+    /*PAGINA NOSOTROS*/
+    .vision-valores .vision-valores-box {
+        display: flex;
+        justify-content:flex-start;
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 5em;
+        width:100%;
+
+    }
+
+    @media screen and (max-width: 991px) {
+        .vision-valores .vision-valores-box {
+
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            width:50%;
+        }
+
+    }
+
+    @media screen and (max-width: 991px) {
+        .vision-valores .vision-valores-box {
+
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            align-items: center;
+            flex-wrap: wrap;
+            width:100%;
+        }
+
+    }
+            
+    
+
+    .vision-valores .vision-valores-img {
+       
+        width:100%;
+        margin-right: 40px;
+
+    } 
+
+    .vision-valores img {
+        width:100%;
+
+
+    }
+
+    .vision-valores .vision-details {
+       
+        width:50%;
+        margin-right: 40px;
+
+    } 
+
+    @media screen and (max-width: 991px) {
+        .vision-valores .vision-details {
+           
+            width:100%;
+            margin-right: 40px;
+            padding-top: 5em;
+            } 
+        }
+
+
+
+
+
+
+
+
+}
+
+
+

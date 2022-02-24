@@ -1,18 +1,342 @@
-/* Error: $n: Invalid index 4 for a list with 1 elements.
- *    ,
- * 99 |                                 color: nth(colores,4);
- *    |                                        ^^^^^^^^^^^^^^
- *    '
- *   scss\components\_header.scss 99:40  @import
- *   scss\style.scss 17:9                root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: $n: Invalid index 4 for a list with 1 elements.\a    \2577 \a 99 \2502                                  color: nth(colores,4);\d\a    \2502                                         ^^^^^^^^^^^^^^\a    \2575 \a   scss\\components\\_header.scss 99:40  @import\a   scss\\style.scss 17:9                root stylesheet";
+/* Nesting CSS - La Ruta del Bonsai*/
+/* GRAL CSS RESET */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+/* TIPOGRAFIAS */
+/* COLORES */
+/**/
+/* LISTAS */
+/* CSS HEADER */
+header {
+  /* NAVIGATION */
+}
+header nav .navbar {
+  font-size: 16px;
+  font-weight: 500;
+  color: orange;
+  text-shadow: 0 1.5em 50px;
+}
+header nav .navbar-light {
+  outline: none;
+  color: orange;
+  background-color: orange;
+  text-shadow: 0 1.5em 50px;
+}
+header nav div {
+  /* Mobile - toggler */
+}
+header nav div a {
+  /* Responsive LOGO */
+}
+@media only screen and (max-width: 991px) {
+  header nav div a #header-logo {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 578px) {
+  header nav div a #header-logo {
+    display: none;
+  }
+}
+header nav div button .navbar-toggler {
+  outline: none;
+}
+header nav div button .navbar-toggler:hover {
+  border: none;
+  outline: none;
+  background-color: orange;
+}
+@media only screen and (max-width: 991px) {
+  header nav div #navbarNav {
+    margin: 1em;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: center;
+  }
+}
+header nav div ul li a .nav-link {
+  padding: 0 10px;
+  transition: 0.3 ease;
+}
+header nav div ul li a .nav-link:hover {
+  color: orange;
+  text-shadow: 0 1.5em 50px;
+}
+header nav div ul li a .nav-link:hover.active {
+  color: orange;
+  text-shadow: 0 1.5em 50px;
+}
+
+/* COLORES */
+/**/
+/* BUTTONS */
+body {
+  /*STICKY BUTTON*/
+  /* PAGINA CONTACTO */
+}
+body .button {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: lightgreen;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .button:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+body #sticky-button {
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+body .sticky-btn {
+  position: fixed;
+  background-color: orange;
+  padding: 10px;
+  bottom: 323px;
+  right: 60px;
+  border: none;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 640px) {
+  body .sticky-btn {
+    display: none;
+  }
+}
+body .sticky-btn:hover {
+  position: fixed;
+  background-color: green;
+  padding: 10px;
+  bottom: 323px;
+  right: 60px;
+  border: none;
+  font-family: sans-serif;
+  color: orange;
+  text-shadow: 0 1.5em 50px;
+  transition: 0.3s ease;
+}
+
+/* LISTAS */
+/* MAIN */
+main {
+  /* CAROUSEL */
+  /* SECTION INTRO */
+  /* SECTION PRODUCTO */
+  /*PAGINA NOSOTROS*/
+}
+main .container {
+  margin: 0 auto;
+}
+main hr {
+  width: 80px;
+  height: 20px;
+  background-color: orange;
+}
+main .hr-2 {
+  width: 80px;
+  height: 20px;
+  background-color: green;
+}
+main .h2 {
+  font-size: 4rem;
+  font-weight: 200;
+}
+main .h3 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+main .h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+main .carousel-item {
+  width: 100%;
+  background-position: top 0px center;
+}
+main .row {
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex start;
+}
+main .product img {
+  transition: 0.3s all;
+}
+main .product img:hover {
+  opacity: 0.7;
+}
+main .vision-valores .vision-valores-box {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-bottom: 5em;
+  width: 100%;
+}
+@media screen and (max-width: 991px) {
+  main .vision-valores .vision-valores-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 991px) {
+  main .vision-valores .vision-valores-box {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+main .vision-valores .vision-valores-img {
+  width: 100%;
+  margin-right: 40px;
+}
+main .vision-valores img {
+  width: 100%;
+}
+main .vision-valores .vision-details {
+  width: 50%;
+  margin-right: 40px;
+}
+@media screen and (max-width: 991px) {
+  main .vision-valores .vision-details {
+    width: 100%;
+    margin-right: 40px;
+    padding-top: 5em;
+  }
+}
+
+/* COLORES */
+/**/
+/* LISTAS */
+/*FOOTER*/
+section .footer {
+  height: fit-content;
+  background-color: #89a095;
+  /*border:2px solid black;*/
+  margin: 0px;
+  display: flex;
+  justify-content: space space-around;
+  flex-direction: column;
+  align-items: center;
+}
+section .footer .p-footer {
+  margin: 10px;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+section .footer b {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  border: black;
+  margin: 0px;
+}
+section .footer ul li a .footer-icon {
+  max-width: 48px;
+  display: flex;
+  justify-content: space-around;
+}
+section .footer ul li a i {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: lighter;
+  text-align: left;
+  color: #8f8f8f;
+  padding: 5px;
+}
+
+/* BUTTONS */
+body {
+  /*STICKY BUTTON*/
+  /* PAGINA CONTACTO */
+}
+body .button {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: lightgreen;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .button:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: none;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+body #sticky-button {
+  color: black;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+body .sticky-btn {
+  position: fixed;
+  background-color: orange;
+  padding: 10px;
+  bottom: 323px;
+  right: 60px;
+  border: none;
+  font-family: sans-serif;
+}
+@media only screen and (max-width: 640px) {
+  body .sticky-btn {
+    display: none;
+  }
+}
+body .sticky-btn:hover {
+  position: fixed;
+  background-color: green;
+  padding: 10px;
+  bottom: 323px;
+  right: 60px;
+  border: none;
+  font-family: sans-serif;
+  color: orange;
+  text-shadow: 0 1.5em 50px;
+  transition: 0.3s ease;
+}
+
+/* COLORES */
+/**/
+/* LISTAS */
+
+/*# sourceMappingURL=style.css.map */

@@ -1,5 +1,8 @@
 @import'../base/variables';
 @import'buttons';
+@import'../base/listas';
+
+
 
 /* MAIN */
 
@@ -73,12 +76,10 @@ main {
     
     .product img {
         transition: 0.3s all;
-    }
-    
-    .product:hover img {
+    &:hover {
         opacity: 0.7;
     
-    }
+    }}
     
         
     /*PAGINA NOSOTROS*/
@@ -138,17 +139,16 @@ main {
         width:50%;
         margin-right: 40px;
 
-    } 
+    
 
     @media screen and (max-width: 991px) {
-        .vision-valores .vision-details {
-           
+                   
             width:100%;
             margin-right: 40px;
             padding-top: 5em;
-            } 
+            
         }
-
+    }
 
 
 

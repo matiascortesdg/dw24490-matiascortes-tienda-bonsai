@@ -14,14 +14,14 @@
                 .navbar {
                     font-size: nth($f-size,2);
                     font-weight: 500;
-                    color: nth($colores,4);
+                    color: nth($colores, 4);
                     text-shadow: 0 1.5em 50px;
                 }
 
                 .navbar-light {
                     outline:none;
-                    color: nth($colores,4);
-                    background-color: nth($colores,4);
+                    color: nth($colores, 4);
+                    background-color: nth($colores, 4);
                     text-shadow: 0 1.5em 50px;
                 }
             
@@ -30,8 +30,7 @@
 
                     a {
 
-                        img {
-
+                    
                             /* Responsive LOGO */
 
                             @media only screen and (max-width:991px) {
@@ -44,11 +43,10 @@
                                 #header-logo {
                                 display:none;
                                 
-                                }
-                            }
-                        }
+                                
+                            }}
                     }
-                }    
+                  
             
                 /* Mobile - toggler */
             
@@ -56,18 +54,14 @@
                     
                     .navbar-toggler {
                         outline:none;
-                    }
-
-                    .navbar-toggler:hover {
+                    &:hover {
                         border: none;
                         outline:none;
-                        background-color: nth($colores,4);
+                        background-color: nth($colores, 4);
                         
-                    }
+                    }}
                     
                 }
-
-            div {
 
                 @media only screen and (max-width:991px) {
                     #navbarNav {
@@ -77,6 +71,11 @@
                     text-align: center;
                     }
                 }
+            } 
+
+            div {
+
+
 
                 ul {
 
@@ -88,17 +87,13 @@
                             .nav-link {
                                 padding: 0 10px;
                                 transition: 0.3 ease;
-                            }
-                
-                            .nav-link:hover {
+                            &:hover {
                                 color: nth($colores,4);
                                 text-shadow: 0 1.5em 50px;
-                            }
-
-                            .nav-link.active {
-                                color: nth($colores,4);
+                            &.active {
+                                color: nth($colores, 4);
                                 text-shadow: 0 1.5em 50px;
-                            }    
+                            }}}    
                             
                         }    
 

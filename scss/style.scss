@@ -8,9 +8,15 @@
     box-sizing: border-box;
 }
 
+/* TIPOGRAFIAS */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 
 
 @import 'components/header';
 @import 'components/main';
 @import 'components/footer';
 @import 'components/buttons';
+@import 'base/variables';
+@import 'base/listas';

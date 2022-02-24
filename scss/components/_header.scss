@@ -1,5 +1,7 @@
 
 @import'../base/variables';
+@import'../base/colores';
+@import'../base/listas';
 
 
 /* CSS HEADER */
@@ -9,93 +11,99 @@
         /* NAVIGATION */
         
         nav {
-
-            .navbar {
-                font-size: 16px;
-                font-weight: 500;
-            }
-
-            .navbar-light .navbar-nav .nav-link {
-                padding: 0 10px;
-                transition: 0.3 ease;
-            }
-
-            .navbar-light .navbar-nav .nav-link:hover,
-            .navbar-light .navbar-nav .nav-link.active {
-                color: orange;
-                text-shadow: 0 1.5em 50px;
-        
-            }
-                
-            /* Mobile */
-
-                .navbar-light .navbar-toggler {
-
-                    outline:none;
-                
+                .navbar {
+                    font-size: nth($f-size,2);
+                    font-weight: 500;
+                    color: nth($colores,4);
+                    text-shadow: 0 1.5em 50px;
                 }
 
-                .navbar-light .navbar-toggler:hover {
-                    border: none;
+                .navbar-light {
                     outline:none;
-                    background-color: orange;
+                    color: nth($colores,4);
+                    background-color: nth($colores,4);
+                    text-shadow: 0 1.5em 50px;
                 }
+            
 
-                @media only screen and (max-width:991px) {
-                    #navbarNav > ul {
-                        margin: 1em;
-                        justify-content: flex-end;
-                        align-items: flex-end;
-                        text-align: center;
+                div {
 
+                    a {
+
+                        img {
+
+                            /* Responsive LOGO */
+
+                            @media only screen and (max-width:991px) {
+                                #header-logo {
+                                width:15%;
+                                }     
+                            }
+
+                            @media only screen and (max-width:578px) {
+                                #header-logo {
+                                display:none;
+                                
+                                }
+                            }
+                        }
                     }
+                }    
+            
+                /* Mobile - toggler */
+            
+                button {    
+                    
+                    .navbar-toggler {
+                        outline:none;
+                    }
+
+                    .navbar-toggler:hover {
+                        border: none;
+                        outline:none;
+                        background-color: nth($colores,4);
+                        
+                    }
+                    
                 }
 
             div {
 
-                a {
-
-                    /* Responsive LOGO */
-
-                    @media only screen and (max-width:991px) {
-                        #header-logo {
-                        width:15%;
-                        }
+                @media only screen and (max-width:991px) {
+                    #navbarNav {
+                    margin: 1em;
+                    justify-content: flex-end;
+                    align-items: flex-end;
+                    text-align: center;
                     }
-                    
-                    @media only screen and (max-width:578px) {
-                        #header-logo {
-                        display:none;
-                        }
-                    
-                    }
-
-
-                    
-                        
-
-
-                     
-
                 }
 
+                ul {
+
+                
+                    li {
+
+                        a { 
+
+                            .nav-link {
+                                padding: 0 10px;
+                                transition: 0.3 ease;
+                            }
+                
+                            .nav-link:hover {
+                                color: nth($colores,4);
+                                text-shadow: 0 1.5em 50px;
+                            }
+
+                            .nav-link.active {
+                                color: nth(colores,4);
+                                text-shadow: 0 1.5em 50px;
+                            }    
+                            
+                        }    
+
+                    }
+                }
             }
-
-        }      
-
-        
-    }    
-
-       
-
-
-
-
-
-
-    
-
-
-    
-
-
+        }
+    }

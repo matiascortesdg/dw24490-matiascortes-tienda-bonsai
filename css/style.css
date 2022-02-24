@@ -15,61 +15,61 @@
 header {
   /* NAVIGATION */
 }
-header nav .navbar {
-  font-size: 16px;
-  font-weight: 500;
-  color: orange;
-  text-shadow: 0 1.5em 50px;
-}
-header nav .navbar-light {
+header .navbar-light {
   outline: none;
   color: orange;
   background-color: orange;
-  text-shadow: 0 1.5em 50px;
-}
-header nav div {
   /* Mobile - toggler */
 }
-header nav div a {
-  /* Responsive LOGO */
+header .navbar-light .collapse .navbar-nav .nav-item .nav-link {
+  padding: 0 10px;
+  transition: 0.3 ease;
 }
-@media only screen and (max-width: 991px) {
-  header nav div a #header-logo {
-    width: 15%;
-  }
+header .navbar-light .collapse .navbar-nav .nav-item .nav-link:hover {
+  color: orange;
+  text-shadow: 0 1.5em 50px;
 }
-@media only screen and (max-width: 578px) {
-  header nav div a #header-logo {
-    display: none;
-  }
+header .navbar-light .collapse .navbar-nav .nav-item .active {
+  color: orange;
+  text-shadow: 0 1.5em 50px;
 }
-header nav div button .navbar-toggler {
+header .navbar-light .collapse .navbar-nav .nav-item .active:hover {
+  color: orange;
+  text-shadow: 0 1.5em 50px;
+}
+header .navbar-light .navbar-toggler {
   outline: none;
 }
-header nav div button .navbar-toggler:hover {
+header .navbar-light .navbar-toggler:hover {
   border: none;
   outline: none;
   background-color: orange;
 }
 @media only screen and (max-width: 991px) {
-  header nav div #navbarNav {
+  header .navbar-light #navbarNav {
     margin: 1em;
     justify-content: flex-end;
     align-items: flex-end;
-    text-align: center;
+    text-align: right;
   }
 }
-header nav div ul li a .nav-link {
-  padding: 0 10px;
-  transition: 0.3 ease;
-}
-header nav div ul li a .nav-link:hover {
+header .navbar {
+  font-size: 16px;
+  font-weight: 500;
   color: orange;
-  text-shadow: 0 1.5em 50px;
 }
-header nav div ul li a .nav-link:hover.active {
-  color: orange;
-  text-shadow: 0 1.5em 50px;
+header .navbar .container-fluid .navbar-brand {
+  /* Responsive LOGO */
+}
+@media only screen and (max-width: 991px) {
+  header .navbar .container-fluid .navbar-brand #header-logo {
+    width: 15%;
+  }
+}
+@media only screen and (max-width: 578px) {
+  header .navbar .container-fluid .navbar-brand #header-logo {
+    display: none;
+  }
 }
 
 /* COLORES */
@@ -144,9 +144,6 @@ main {
   /* SECTION PRODUCTO */
   /*PAGINA NOSOTROS*/
 }
-main .container {
-  margin: 0 auto;
-}
 main hr {
   width: 80px;
   height: 20px;
@@ -154,8 +151,11 @@ main hr {
 }
 main .hr-2 {
   width: 80px;
-  height: 20px;
+  height: 1px;
   background-color: green;
+}
+main .container {
+  margin: 0 auto;
 }
 main .h2 {
   font-size: 4rem;

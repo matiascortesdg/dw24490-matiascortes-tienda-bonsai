@@ -9,29 +9,24 @@
 
 main { 
     
-
-    .container {
-        margin: 0 auto;
-    }
-
     hr {
         width:80px;
         height: 20px;
-        background-color:orange;
+        background-color:nth($colores, 4);
 
     }
-
-
 
     .hr-2 {
 
         width:80px;
-        height: 20px;
-        background-color:green;
+        height: 1px;
+        background-color:nth($colores, 5);
 
     }
-
-
+    .container {
+        margin: 0 auto;
+    }
+    
     .h2 {
  
         font-size: 4rem;

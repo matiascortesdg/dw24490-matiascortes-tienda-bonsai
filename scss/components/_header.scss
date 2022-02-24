@@ -10,95 +10,92 @@
 
         /* NAVIGATION */
         
-        nav {
-                .navbar {
-                    font-size: nth($f-size,2);
-                    font-weight: 500;
-                    color: nth($colores, 4);
-                    text-shadow: 0 1.5em 50px;
-                }
 
+    
                 .navbar-light {
                     outline:none;
                     color: nth($colores, 4);
                     background-color: nth($colores, 4);
-                    text-shadow: 0 1.5em 50px;
-                }
-            
-
-                div {
-
-                    a {
-
                     
-                            /* Responsive LOGO */
+                
+                    .collapse {
 
-                            @media only screen and (max-width:991px) {
-                                #header-logo {
-                                width:15%;
-                                }     
+                        .navbar-nav {
+        
+                            .nav-item {
+                                        
+                                    .nav-link {
+                                        padding: 0 10px;
+                                        transition: 0.3 ease;
+
+                                        &:hover {
+                                            color: nth($colores,4);
+                                            text-shadow: 0 1.5em 50px;
+
+                                        }}                     
+                                    
+                                        .active {
+                                            color: nth($colores, 4);
+                                            text-shadow: 0 1.5em 50px;
+
+                                            &:hover {
+                                                color: nth($colores,4);
+                                                text-shadow: 0 1.5em 50px;
+                                        }} 
+        
+                                    }
                             }
-
-                            @media only screen and (max-width:578px) {
-                                #header-logo {
-                                display:none;
-                                
-                                
-                            }}
                     }
-                  
-            
-                /* Mobile - toggler */
-            
-                button {    
-                    
+
+                    /* Mobile - toggler */
                     .navbar-toggler {
                         outline:none;
-                    &:hover {
-                        border: none;
-                        outline:none;
-                        background-color: nth($colores, 4);
+
+                        &:hover {
+                            border: none;
+                            outline:none;
+                            background-color: nth($colores, 4);
                         
-                    }}
-                    
-                }
-
-                @media only screen and (max-width:991px) {
-                    #navbarNav {
-                    margin: 1em;
-                    justify-content: flex-end;
-                    align-items: flex-end;
-                    text-align: center;
-                    }
-                }
-            } 
-
-            div {
-
-
-
-                ul {
-
+                        }   
+                    }    
                 
-                    li {
 
-                        a { 
-
-                            .nav-link {
-                                padding: 0 10px;
-                                transition: 0.3 ease;
-                            &:hover {
-                                color: nth($colores,4);
-                                text-shadow: 0 1.5em 50px;
-                            &.active {
-                                color: nth($colores, 4);
-                                text-shadow: 0 1.5em 50px;
-                            }}}    
-                            
-                        }    
-
-                    }
+                    @media only screen and (max-width:991px) {
+                        #navbarNav {
+                        margin: 1em;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        text-align: right;
+                    }}
                 }
-            }
-        }
+            
+            .navbar {
+                
+                    font-size: nth($f-size,2);
+                    font-weight: 500;
+                    color: nth($colores, 4);
+                    
+                    
+                .container-fluid {
+
+                    .navbar-brand {
+
+                        /* Responsive LOGO */
+
+                        @media only screen and (max-width:991px) {
+                            #header-logo {
+                            width:15%;
+                            }     
+                        }
+
+                        @media only screen and (max-width:578px) {
+                        #header-logo {
+                        display:none;
+                                
+                                
+                        }}
+                    } 
+                }
+            }   
+        
     }

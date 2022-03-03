@@ -1,5 +1,6 @@
 @import'../base/variables';
 @import'../base/listas';
+@import'../base/maps';
 
 
 /*FOOTER*/
@@ -23,10 +24,15 @@
             
 
                 .p-footer {
-                    margin: 10px;
+                    margin: map-get($p-footer, margin-footer);
+                    padding: map-get($p-footer, padding-footer, font-family-footer, color-footer);
+                    color: map-get($p-footer, color-footer);
+                    font-family: 'Roboto',sans-serif;
+                    
+                    /*margin: 10px;
                     padding: 20px;
                     font-family: 'Roboto',sans-serif;
-                    color: black;
+                    color: black;*/
                 }
 
                 b {

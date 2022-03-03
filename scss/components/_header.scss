@@ -2,12 +2,14 @@
 @import'../base/variables';
 @import'../base/colores';
 @import'../base/listas';
+@import'../base/maps';
+
 
 
 /* CSS HEADER */
     
     header { 
-
+        background-color: map-get($header, bg-header);
         /* NAVIGATION */
         
 

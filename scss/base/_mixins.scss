@@ -1,0 +1,10 @@
+/* Mixins - a diferencia de los extends puedo agregar un parametro vacio para dar un valor en el futuro */
+
+@mixin vision-box($display, $justify-content, $flex-direction, $align-items, $vision-width) {
+    display: $display;
+    justify-content: $justify-content;
+    flex-direction: $flex-direction;
+    align-items: $align-items;
+    width: $vision-width;
+
+}

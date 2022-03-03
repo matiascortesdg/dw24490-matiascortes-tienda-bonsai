@@ -1,7 +1,9 @@
-@import'../base/variables';
-@import'buttons';
-@import'../base/listas';
-
+@import '../base/variables';
+@import 'buttons';
+@import '../base/listas';
+@import '../base/maps';
+@import'../base/mixins';
+@import '../base/mixins';
 
 
 /* MAIN */
@@ -23,6 +25,7 @@ main {
         background-color:nth($colores, 5);
 
     }
+
     .container {
         margin: 0 auto;
     }
@@ -41,6 +44,7 @@ main {
     }
 
     .h5 {
+
         font-family: 'Roboto',sans-serif;
         font-size: 1rem;
         font-weight: 600;
@@ -50,7 +54,7 @@ main {
     /* CAROUSEL */
 
     .carousel-item {
-        width: 100%;
+        @extend %vision-valores;
         background-position:top 0px center;
     }
 
@@ -79,37 +83,47 @@ main {
         
     /*PAGINA NOSOTROS*/
     .vision-valores .vision-valores-box {
-        display: flex;
+        /* heredar la extension */
+        @include vision-box(flex, flex-start, row, flex-start, 100%);
+
+        /*display: flex;
         justify-content:flex-start;
+      
         flex-direction: row;
-        align-items: flex-start;
+        align-items: flex-start;*/
         padding-bottom: 5em;
-        width:100%;
+        /*width:100%;*/
 
     }
 
     @media screen and (max-width: 991px) {
         .vision-valores .vision-valores-box {
-
-            display: flex;
-            justify-content: flex-start;
+        /* heredar la extension */
+        @include vision-box(flex, flex-start, column, center, 50%);
+        
+            /*display: flex;
+            justify-content:flex-start;
+      
             flex-direction: column;
-            align-items: center;
+            align-items: center;*/
             flex-wrap: wrap;
-            width:50%;
+            /*width:50%;*/
         }
 
     }
 
     @media screen and (max-width: 991px) {
         .vision-valores .vision-valores-box {
-
-            display: flex;
-            justify-content: flex-start;
+        /* heredar la extension */
+        @include vision-box(flex, flex-start, column, center, 100%);
+        
+            /*display: flex;
+            justify-content:flex-start;
+      
             flex-direction: column;
-            align-items: center;
+            align-items: center;*/
             flex-wrap: wrap;
-            width:100%;
+            /*width:100%;*/
         }
 
     }
@@ -118,13 +132,13 @@ main {
 
     .vision-valores .vision-valores-img {
        
-        width:100%;
+        @extend %vision-valores;
         margin-right: 40px;
 
     } 
 
     .vision-valores img {
-        width:100%;
+        @extend %vision-valores;
 
 
     }
@@ -138,7 +152,7 @@ main {
 
     @media screen and (max-width: 991px) {
                    
-            width:100%;
+            width: 100%;
             margin-right: 40px;
             padding-top: 5em;
             

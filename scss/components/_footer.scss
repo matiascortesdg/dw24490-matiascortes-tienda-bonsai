@@ -25,7 +25,7 @@
 
                 .p-footer {
                     margin: map-get($p-footer, margin-footer);
-                    padding: map-get($p-footer, padding-footer, font-family-footer, color-footer);
+                    padding: map-get($p-footer, padding-footer);
                     color: map-get($p-footer, color-footer);
                     font-family: 'Roboto',sans-serif;
                     

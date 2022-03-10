@@ -9,7 +9,6 @@
 
 /* TIPOGRAFIAS */
 /* COLORES */
-/**/
 /* LISTAS */
 /* Maps - crear listas de estilos agrupados */
 /* CSS HEADER */
@@ -75,10 +74,9 @@ header .navbar .container-fluid .navbar-brand {
 }
 
 /* COLORES */
-/**/
 /* BUTTONS */
 body {
-  /*STICKY BUTTON*/
+  /*MAIN BUTTONS */
   /* PAGINA CONTACTO */
 }
 body .button {
@@ -141,7 +139,6 @@ body .sticky-btn:hover {
 /* LISTAS */
 /* Maps - crear listas de estilos agrupados */
 /* Mixins - a diferencia de los extends puedo agregar un parametro vacio para dar un valor en el futuro */
-/* Mixins - a diferencia de los extends puedo agregar un parametro vacio para dar un valor en el futuro */
 /* MAIN */
 main {
   /* CAROUSEL */
@@ -199,13 +196,7 @@ main .vision-valores .vision-valores-box {
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  /*display: flex;
-  justify-content:flex-start;
-
-  flex-direction: row;
-  align-items: flex-start;*/
   padding-bottom: 5em;
-  /*width:100%;*/
 }
 @media screen and (max-width: 991px) {
   main .vision-valores .vision-valores-box {
@@ -215,13 +206,7 @@ main .vision-valores .vision-valores-box {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    /*display: flex;
-    justify-content:flex-start;
-
-    flex-direction: column;
-    align-items: center;*/
     flex-wrap: wrap;
-    /*width:50%;*/
   }
 }
 @media screen and (max-width: 991px) {
@@ -232,13 +217,7 @@ main .vision-valores .vision-valores-box {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /*display: flex;
-    justify-content:flex-start;
-
-    flex-direction: column;
-    align-items: center;*/
     flex-wrap: wrap;
-    /*width:100%;*/
   }
 }
 main .vision-valores .vision-valores-img {
@@ -257,14 +236,12 @@ main .vision-valores .vision-details {
 }
 
 /* COLORES */
-/**/
 /* LISTAS */
 /* Maps - crear listas de estilos agrupados */
 /*FOOTER*/
 section .footer {
   height: fit-content;
   background-color: #89a095;
-  /*border:2px solid black;*/
   margin: 0px;
   display: flex;
   justify-content: space space-around;
@@ -276,10 +253,6 @@ section .footer .p-footer {
   padding: 20px;
   color: black;
   font-family: "Roboto", sans-serif;
-  /*margin: 10px;
-  padding: 20px;
-  font-family: 'Roboto',sans-serif;
-  color: black;*/
 }
 section .footer b {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
@@ -301,7 +274,7 @@ section .footer ul li a i {
 
 /* BUTTONS */
 body {
-  /*STICKY BUTTON*/
+  /*MAIN BUTTONS */
   /* PAGINA CONTACTO */
 }
 body .button {
@@ -362,15 +335,13 @@ body .sticky-btn:hover {
 }
 
 /* COLORES */
-/**/
 /* LISTAS */
 /* Maps - crear listas de estilos agrupados */
 /* Extends */
 /* COLORES */
-/**/
 /* BUTTONS */
 body {
-  /*STICKY BUTTON*/
+  /*MAIN BUTTONS */
   /* PAGINA CONTACTO */
 }
 body .button {
@@ -432,7 +403,6 @@ body .sticky-btn:hover {
 
 /* LISTAS */
 /* Maps - crear listas de estilos agrupados */
-/* Mixins - a diferencia de los extends puedo agregar un parametro vacio para dar un valor en el futuro */
 /* Mixins - a diferencia de los extends puedo agregar un parametro vacio para dar un valor en el futuro */
 /* MAIN */
 main {
@@ -491,13 +461,7 @@ main .vision-valores .vision-valores-box {
   flex-direction: row;
   align-items: flex-start;
   width: 100%;
-  /*display: flex;
-  justify-content:flex-start;
-
-  flex-direction: row;
-  align-items: flex-start;*/
   padding-bottom: 5em;
-  /*width:100%;*/
 }
 @media screen and (max-width: 991px) {
   main .vision-valores .vision-valores-box {
@@ -507,13 +471,7 @@ main .vision-valores .vision-valores-box {
     flex-direction: column;
     align-items: center;
     width: 50%;
-    /*display: flex;
-    justify-content:flex-start;
-
-    flex-direction: column;
-    align-items: center;*/
     flex-wrap: wrap;
-    /*width:50%;*/
   }
 }
 @media screen and (max-width: 991px) {
@@ -524,13 +482,7 @@ main .vision-valores .vision-valores-box {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /*display: flex;
-    justify-content:flex-start;
-
-    flex-direction: column;
-    align-items: center;*/
     flex-wrap: wrap;
-    /*width:100%;*/
   }
 }
 main .vision-valores .vision-valores-img {

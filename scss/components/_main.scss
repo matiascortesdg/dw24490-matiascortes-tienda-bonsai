@@ -2,7 +2,6 @@
 @import 'buttons';
 @import '../base/listas';
 @import '../base/maps';
-@import'../base/mixins';
 @import '../base/mixins';
 
 
@@ -83,47 +82,36 @@ main {
         
     /*PAGINA NOSOTROS*/
     .vision-valores .vision-valores-box {
+        
         /* heredar la extension */
         @include vision-box(flex, flex-start, row, flex-start, 100%);
 
-        /*display: flex;
-        justify-content:flex-start;
-      
-        flex-direction: row;
-        align-items: flex-start;*/
-        padding-bottom: 5em;
-        /*width:100%;*/
+            padding-bottom: 5em;
+        
 
     }
 
     @media screen and (max-width: 991px) {
         .vision-valores .vision-valores-box {
+
         /* heredar la extension */
         @include vision-box(flex, flex-start, column, center, 50%);
-        
-            /*display: flex;
-            justify-content:flex-start;
-      
-            flex-direction: column;
-            align-items: center;*/
+
             flex-wrap: wrap;
-            /*width:50%;*/
+           
         }
 
     }
 
     @media screen and (max-width: 991px) {
         .vision-valores .vision-valores-box {
+
         /* heredar la extension */
         @include vision-box(flex, flex-start, column, center, 100%);
         
-            /*display: flex;
-            justify-content:flex-start;
-      
-            flex-direction: column;
-            align-items: center;*/
+
             flex-wrap: wrap;
-            /*width:100%;*/
+            
         }
 
     }
@@ -158,11 +146,6 @@ main {
             
         }
     }
-
-
-
-
-
 
 
 }

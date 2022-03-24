@@ -12,63 +12,69 @@
 /* LISTAS */
 /* Maps - crear listas de estilos agrupados */
 /* CSS HEADER */
-header {
+body header {
   background-color: white;
   /* NAVIGATION */
 }
-header .navbar-light {
+body header .navbar-light {
   outline: none;
   color: orange;
   background-color: orange;
   /* Mobile - toggler */
 }
-header .navbar-light .collapse .navbar-nav .nav-item .nav-link {
+body header .navbar-light .collapse .navbar-nav .nav-item .nav-link {
   padding: 0 10px;
   transition: 0.3 ease;
 }
-header .navbar-light .collapse .navbar-nav .nav-item .nav-link:hover {
+body header .navbar-light .collapse .navbar-nav .nav-item .nav-link i {
+  font-size: 1.2rem;
+  padding: 0.7px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+body header .navbar-light .collapse .navbar-nav .nav-item .nav-link i:hover {
   color: orange;
   text-shadow: 0 1.5em 50px;
 }
-header .navbar-light .collapse .navbar-nav .nav-item .active {
+body header .navbar-light .collapse .navbar-nav .nav-item .nav-link i .active {
   color: orange;
   text-shadow: 0 1.5em 50px;
 }
-header .navbar-light .collapse .navbar-nav .nav-item .active:hover {
+body header .navbar-light .collapse .navbar-nav .nav-item .nav-link i .active:hover {
   color: orange;
   text-shadow: 0 1.5em 50px;
 }
-header .navbar-light .navbar-toggler {
+body header .navbar-light .navbar-toggler {
   outline: none;
 }
-header .navbar-light .navbar-toggler:hover {
+body header .navbar-light .navbar-toggler:hover {
   border: none;
   outline: none;
   background-color: orange;
 }
 @media only screen and (max-width: 991px) {
-  header .navbar-light #navbarNav {
+  body header .navbar-light #navbarNav {
     margin: 1em;
     justify-content: flex-end;
     align-items: flex-end;
     text-align: right;
   }
 }
-header .navbar {
+body header .navbar {
   font-size: 16px;
   font-weight: 500;
   color: orange;
 }
-header .navbar .container-fluid .navbar-brand {
+body header .navbar .container-fluid .navbar-brand {
   /* Responsive LOGO */
 }
 @media only screen and (max-width: 991px) {
-  header .navbar .container-fluid .navbar-brand #header-logo {
+  body header .navbar .container-fluid .navbar-brand #header-logo {
     width: 15%;
   }
 }
 @media only screen and (max-width: 578px) {
-  header .navbar .container-fluid .navbar-brand #header-logo {
+  body header .navbar .container-fluid .navbar-brand #header-logo {
     display: none;
   }
 }
@@ -77,6 +83,7 @@ header .navbar .container-fluid .navbar-brand {
 /* BUTTONS */
 body {
   /*MAIN BUTTONS */
+  /*PRODUCTOS BUTTONS */
   /* PAGINA CONTACTO */
 }
 body .button {
@@ -103,6 +110,45 @@ body .button:hover {
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+body .btn-outline {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid lightgreen;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .btn-outline:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid lightgreen;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@media only screen and (max-width: 280px) {
+  body .btn-outline {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid lightgreen;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 0;
+    width: 8rem;
+  }
 }
 body #sticky-button {
   color: black;
@@ -145,6 +191,7 @@ main {
   /* SECTION INTRO */
   /* SECTION PRODUCTO */
   /*PAGINA NOSOTROS*/
+  /*Pagina Tienda*/
 }
 main hr {
   width: 80px;
@@ -233,6 +280,89 @@ main .vision-valores .vision-details {
     margin-right: 40px;
     padding-top: 5em;
   }
+}
+main .container-fluid {
+  /*Cart Items*/
+}
+main .container-fluid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .container-fluid table th {
+  text-align: left;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: green;
+  font-weight: normal;
+}
+main .container-fluid table td {
+  text-align: left;
+  padding: auto;
+}
+main .container-fluid table td .cart-info {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  main .container-fluid table td .cart-info .cart-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .container-fluid table td .cart-info th {
+    padding: 5px;
+  }
+  main .container-fluid table td .cart-info .cart-info .p-cart {
+    display: none;
+  }
+}
+main .container-fluid table td .cart-info .p-cart {
+  font-weight: 500;
+}
+main .container-fluid table td input {
+  text-align: center;
+  width: 30%;
+  height: 30px;
+  padding: 0px;
+}
+main .container-fluid table td a {
+  color: green;
+  font-size: 1rem;
+}
+main .container-fluid table td img {
+  min-width: 2em;
+  max-height: 5em;
+  border-radius: 80%;
+}
+main .container-fluid .total-price {
+  margin: 1rem auto;
+  border-top: 1px solid #89a095;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+main .container-fluid .total-price table {
+  margin: 1rem;
+  width: 100%;
+  max-width: 20rem;
+}
+main .container-fluid .total-price table td:last-child {
+  text-align: right;
+}
+main .container-fluid .total-price table th:last-child {
+  text-align: right;
+}
+
+.cart-page {
+  margin: 80 auto;
 }
 
 /* COLORES */
@@ -275,6 +405,7 @@ section .footer ul li a i {
 /* BUTTONS */
 body {
   /*MAIN BUTTONS */
+  /*PRODUCTOS BUTTONS */
   /* PAGINA CONTACTO */
 }
 body .button {
@@ -301,6 +432,45 @@ body .button:hover {
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+body .btn-outline {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid lightgreen;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .btn-outline:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid lightgreen;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@media only screen and (max-width: 280px) {
+  body .btn-outline {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid lightgreen;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 0;
+    width: 8rem;
+  }
 }
 body #sticky-button {
   color: black;
@@ -342,6 +512,7 @@ body .sticky-btn:hover {
 /* BUTTONS */
 body {
   /*MAIN BUTTONS */
+  /*PRODUCTOS BUTTONS */
   /* PAGINA CONTACTO */
 }
 body .button {
@@ -368,6 +539,45 @@ body .button:hover {
   padding: 10px 20px;
   cursor: pointer;
   transition: 0.3s ease;
+}
+body .btn-outline {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid lightgreen;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+body .btn-outline:hover {
+  font-family: "Roboto", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  outline: none;
+  border: 1px solid lightgreen;
+  background-color: orange;
+  color: black;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+@media only screen and (max-width: 280px) {
+  body .btn-outline {
+    font-family: "Roboto", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: 1px solid lightgreen;
+    color: black;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 0;
+    width: 8rem;
+  }
 }
 body #sticky-button {
   color: black;
@@ -410,6 +620,7 @@ main {
   /* SECTION INTRO */
   /* SECTION PRODUCTO */
   /*PAGINA NOSOTROS*/
+  /*Pagina Tienda*/
 }
 main hr {
   width: 80px;
@@ -498,6 +709,89 @@ main .vision-valores .vision-details {
     margin-right: 40px;
     padding-top: 5em;
   }
+}
+main .container-fluid {
+  /*Cart Items*/
+}
+main .container-fluid table {
+  width: 100%;
+  border-collapse: collapse;
+}
+main .container-fluid table th {
+  text-align: left;
+  padding: 10px;
+  color: #FFFFFF;
+  background-color: green;
+  font-weight: normal;
+}
+main .container-fluid table td {
+  text-align: left;
+  padding: auto;
+}
+main .container-fluid table td .cart-info {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  main .container-fluid table td .cart-info .cart-info {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 320px) {
+  main .container-fluid table td .cart-info th {
+    padding: 5px;
+  }
+  main .container-fluid table td .cart-info .cart-info .p-cart {
+    display: none;
+  }
+}
+main .container-fluid table td .cart-info .p-cart {
+  font-weight: 500;
+}
+main .container-fluid table td input {
+  text-align: center;
+  width: 30%;
+  height: 30px;
+  padding: 0px;
+}
+main .container-fluid table td a {
+  color: green;
+  font-size: 1rem;
+}
+main .container-fluid table td img {
+  min-width: 2em;
+  max-height: 5em;
+  border-radius: 80%;
+}
+main .container-fluid .total-price {
+  margin: 1rem auto;
+  border-top: 1px solid #89a095;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 500;
+}
+main .container-fluid .total-price table {
+  margin: 1rem;
+  width: 100%;
+  max-width: 20rem;
+}
+main .container-fluid .total-price table td:last-child {
+  text-align: right;
+}
+main .container-fluid .total-price table th:last-child {
+  text-align: right;
+}
+
+.cart-page {
+  margin: 80 auto;
 }
 
 /*Paquete de propiedades que se crean con un PLACEHOLDER y las propiedades de CSS - % = placeholder */

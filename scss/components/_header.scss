@@ -7,13 +7,13 @@
 
 
 /* CSS HEADER */
-    
+body    
+
     header { 
         background-color: map-get($header, bg-header);
-        /* NAVIGATION */
-        
 
-    
+        /* NAVIGATION */
+            
                 .navbar-light {
                     outline:none;
                     color: nth($colores, 4);
@@ -25,28 +25,40 @@
                         .navbar-nav {
         
                             .nav-item {
-                                        
+
                                     .nav-link {
+
                                         padding: 0 10px;
                                         transition: 0.3 ease;
-
-                                        &:hover {
-                                            color: nth($colores,4);
-                                            text-shadow: 0 1.5em 50px;
-
-                                        }}                     
-                                    
-                                        .active {
-                                            color: nth($colores, 4);
-                                            text-shadow: 0 1.5em 50px;
+                                        
+                                        i {
+                                            font-size: 1.2rem;
+                                            padding: 0.7px;
+                                            font-weight: 500;
+                                            transition:0.3s ease;
+                                        
+                                        
 
                                             &:hover {
                                                 color: nth($colores,4);
                                                 text-shadow: 0 1.5em 50px;
-                                        }} 
-        
-                                    }
+
+                                            }                  
+                                    
+                                            .active {
+                                                color: nth($colores, 4);
+                                                text-shadow: 0 1.5em 50px;
+
+                                                &:hover {
+                                                    color: nth($colores,4);
+                                                    text-shadow: 0 1.5em 50px;
+
+                                                }
+                                            }
+                                        }
+                                } 
                             }
+                        }
                     }
 
                     /* Mobile - toggler */
@@ -64,12 +76,12 @@
 
                     @media only screen and (max-width:991px) {
                         #navbarNav {
-                        margin: 1em;
-                        justify-content: flex-end;
-                        align-items: flex-end;
-                        text-align: right;
-                    }}
-                }
+                            margin: 1em;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            text-align: right;
+                        }}
+                    }
             
             .navbar {
                 
@@ -91,13 +103,14 @@
                         }
 
                         @media only screen and (max-width:578px) {
-                        #header-logo {
-                        display:none;
+                            #header-logo {
+                            display:none;
                                 
-                                
-                        }}
+                            }
+                        }
                     } 
                 }
+                
             }   
         
     }

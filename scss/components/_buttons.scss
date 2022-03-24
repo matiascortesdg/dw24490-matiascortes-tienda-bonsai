@@ -31,6 +31,52 @@ body {
         transition: 0.3s ease;
     }
 
+
+    /*PRODUCTOS BUTTONS */
+
+    .btn-outline {
+        font-family: "Roboto", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        outline: none;
+        border: 1px solid lightgreen;
+        color: black;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+    
+    .btn-outline:hover {
+        font-family: "Roboto", sans-serif;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        outline: none;
+        border: 1px solid lightgreen;
+        background-color: orange;
+        color: black;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    
+    @media only screen and (max-width: 280px) {
+        .btn-outline {
+            font-family: "Roboto", sans-serif;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            outline: none;
+            border: 1px solid lightgreen;
+            color: black;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-top: 0;
+            width: 8rem;
+        }
+        }
+    
+
     
     /* PAGINA CONTACTO */
 

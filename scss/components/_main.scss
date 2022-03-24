@@ -74,10 +74,11 @@ main {
     
     .product img {
         transition: 0.3s all;
-    &:hover {
-        opacity: 0.7;
-    
-    }}
+        
+        &:hover {
+            opacity: 0.7;
+        }
+    }
     
         
     /*PAGINA NOSOTROS*/
@@ -87,36 +88,33 @@ main {
         @include vision-box(flex, flex-start, row, flex-start, 100%);
 
             padding-bottom: 5em;
-        
+        }
 
-    }
+        @media screen and (max-width: 991px) {
+            .vision-valores .vision-valores-box {
 
-    @media screen and (max-width: 991px) {
-        .vision-valores .vision-valores-box {
-
-        /* heredar la extension */
-        @include vision-box(flex, flex-start, column, center, 50%);
+            /* heredar la extension */
+       
+            @include vision-box(flex, flex-start, column, center, 50%);
 
             flex-wrap: wrap;
            
+            }
+
         }
 
-    }
+        @media screen and (max-width: 991px) {
+            .vision-valores .vision-valores-box {
 
-    @media screen and (max-width: 991px) {
-        .vision-valores .vision-valores-box {
-
-        /* heredar la extension */
-        @include vision-box(flex, flex-start, column, center, 100%);
-        
+            /* heredar la extension */
+            @include vision-box(flex, flex-start, column, center, 100%);
 
             flex-wrap: wrap;
             
-        }
+            }
 
-    }
+        }
             
-    
 
     .vision-valores .vision-valores-img {
        
@@ -128,7 +126,6 @@ main {
     .vision-valores img {
         @extend %vision-valores;
 
-
     }
 
     .vision-valores .vision-details {
@@ -138,7 +135,7 @@ main {
 
     
 
-    @media screen and (max-width: 991px) {
+        @media screen and (max-width: 991px) {
                    
             width: 100%;
             margin-right: 40px;
@@ -147,8 +144,118 @@ main {
         }
     }
 
+    /*Pagina Tienda*/
+    .container-fluid {
+
+    
+        /*Cart Items*/
+    
+        table {
+            width:100%;
+            border-collapse: collapse;
+
+            th {
+                text-align: left;
+                padding: 10px;
+                color:#FFFFFF ;
+                background-color: green;
+                font-weight: normal;
+
+
+
+            }
+                td {
+                    text-align: left;
+                    padding: auto;
+            
+                        .cart-info {
+                            margin: 1rem auto;
+                            display: flex;
+                            justify-content: space-evenly;
+                            flex-direction: row;
+                            align-items: center;
+                            flex-wrap: wrap;
+              
+                        
+              
+                            @media screen and (max-width: 768px) {
+
+                                .cart-info {
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    flex-direction: column;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                }
+                            }
+              
+                            @media screen and (max-width: 320px) {
+                                th {
+                                    padding:5px;
+                                }
+
+                                .cart-info .p-cart {
+                                    display: none;
+                                }
+                            }
+
+                            .p-cart {
+                                font-weight: 500;
+                            }
+                        }
+
+                        input {
+                            text-align: center;
+                            width: 30%;
+                            height: 30px;
+                            padding: 0px;
+                        }
+                  
+                        a {
+                             color:green;
+                            font-size: 1rem;
+                        }
+                  
+                        img {
+
+                            min-width:2em;
+                            max-height:5em;
+                            border-radius: 80%;
+         
+                        }
+                }
+    
+        }
+
+        .total-price {
+            margin: 1rem auto;
+            border-top:1px solid #89a095;
+            display: flex;
+            justify-content: flex-end;
+            font-weight: 500;
+          
+    
+                table {
+                    margin: 1rem;
+                    width: 100%;
+                    max-width:20rem;
+        
+                
+                    td:last-child {
+                        text-align: right;
+                    }
+    
+                   th:last-child {
+                        text-align: right;
+                    }
+                }    
+        }
+
+
+    }   
 
 }
 
-
-
+.cart-page {
+    margin:80 auto;
+}

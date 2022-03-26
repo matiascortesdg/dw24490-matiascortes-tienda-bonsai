@@ -26,37 +26,31 @@ body
         
                             .nav-item {
 
+                                .active {
+                                    color: nth($colores, 4);
+                                    text-shadow: 0 1.5em 50px;
+
+                                    &:hover {
+                                        color: nth($colores,4);
+                                        text-shadow: 0 1.5em 50px;
+
+                                    }
+                                }
+
                                     .nav-link {
 
-                                        padding: 0 10px;
+                                        padding: 0 20px;
                                         transition: 0.3 ease;
                                         
-                                        i {
-                                            font-size: 1.2rem;
-                                            padding: 0.7px;
-                                            font-weight: 500;
-                                            transition:0.3s ease;
-                                        
-                                        
-
                                             &:hover {
                                                 color: nth($colores,4);
                                                 text-shadow: 0 1.5em 50px;
 
-                                            }                  
+                                            }        
                                     
-                                            .active {
-                                                color: nth($colores, 4);
-                                                text-shadow: 0 1.5em 50px;
 
-                                                &:hover {
-                                                    color: nth($colores,4);
-                                                    text-shadow: 0 1.5em 50px;
-
-                                                }
-                                            }
                                         }
-                                } 
+                                 
                             }
                         }
                     }
@@ -84,9 +78,9 @@ body
                     }
             
             .navbar {
-                
+                    font-family: nth($f-family, 4);
                     font-size: nth($f-size,2);
-                    font-weight: 500;
+                    font-weight: 600;
                     color: nth($colores, 4);
                     
                     

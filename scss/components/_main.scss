@@ -9,6 +9,7 @@
 
 
 main { 
+
     
     hr {
         width:80px;
@@ -29,26 +30,138 @@ main {
         margin: 0 auto;
     }
     
-    .h2 {
- 
-        font-size: 4rem;
-        font-weight: 200;
-    }
-
-
-    .h3 {
-    
-        font-size: 2rem;
-        font-weight: 100;
-    }
-
-    .h5 {
-
-        font-family: 'Roboto',sans-serif;
-        font-size: 1rem;
+    .h1-title {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 7);
         font-weight: 600;
+        text-align: center;
+
+        
+        @media screen and (max-width: 576px) {
+            font-family: nth($f-family, 4);
+            font-size: nth($f-size, 5);
+            font-weight: bold;
+            text-align: center;
+  
+        }
+
+        @media screen and (max-width: 320px) {
+            font-family: nth($f-family, 4);
+            font-size: nth($f-size, 4);
+
+        }
+    }
+    
+    
+    .h2-title {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 6);
+        text-align: center;
+
+        @media screen and (max-width: 576px) {
+            font-family: nth($f-family, 4);
+            font-size: nth($f-size, 5);
+
+        }
+
+        @media screen and (max-width: 320px) {
+            font-family: nth($f-family, 4);
+            font-size: nth($f-size, 4);
+
+        }
+    
     }
 
+
+    .h3-title {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 5);
+        text-align: center;
+
+   
+        @media screen and (max-width: 576px) {
+            font-family: nth($f-family, 4);
+            font-size: nth($f-size, 4);
+     
+        }
+
+    }
+
+    .h4-title {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 4);
+        text-align: center;
+
+   
+        @media screen and (max-width: 576px) {
+            font-size: nth($f-size, 3);
+     
+        }
+
+    }
+
+
+    .h5-title {
+
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .lead {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 3);
+        font-weight: 300;
+        text-align: center;
+
+        @media screen and (max-width: 768px) {
+            font-size: nth($f-size, 2);
+        }
+
+    }
+
+    .text-center {
+        font-family: nth($f-family, 4);
+
+
+        @media screen and (max-width: 576px) {
+            font-size: nth($f-size, 5);
+        }
+
+        @media screen and (max-width: 320px) {
+            font-size: nth($f-size, 4);
+        }
+
+    }   
+
+    p {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+        text-align: left;
+
+    }   
+
+    
+
+
+    .accordion {
+        font-family: nth($f-family, 4);
+
+
+        .accordion-item {
+            border:none;
+
+            .accordion-button {
+                color: nth($colores, 5);
+                background-color: nth($colores, 1);
+            }
+
+        }
+ 
+
+
+    }
 
     /* CAROUSEL */
 
@@ -71,8 +184,50 @@ main {
 
     
     /* SECTION PRODUCTO */
+
+    .card-title {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+        font-weight: bold;
+
+    }
+
+    .card-body {
+        font-family: nth($f-family, 4);
+
+    }
+
+    .card-text {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+        text-align: center;
+        
+    }
+
+    .card-text2 {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+  
+        
+    }
+
+    .card-intro {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+        text-align: left;
+        
+    }
+
+    .p-description {
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 2);
+        text-align: center;
+
+        
+    }
     
     .product img {
+
         transition: 0.3s all;
         
         &:hover {
@@ -132,6 +287,9 @@ main {
        
         width:50%;
         margin-right: 40px;
+        font-family: nth($f-family, 4);
+
+  
 
     
 
@@ -144,10 +302,26 @@ main {
         }
     }
 
+    /*Pagina contacto*/
+        
+        .form-label {
+            font-family: nth($f-family, 4);
+    
+        }
+
+        .form-control {
+            font-family: nth($f-family, 4);
+            
+            
+        }
+
+
     /*Pagina Tienda*/
     .container-fluid {
 
-    
+
+
+
         /*Cart Items*/
     
         table {
@@ -161,10 +335,16 @@ main {
                 background-color: green;
                 font-weight: normal;
 
+                @media screen and (max-width: 320px) {
+                
+                        padding:5px;
+                }
+
 
 
             }
                 td {
+                    font-family: nth($f-family, 4);
                     text-align: left;
                     padding: auto;
             
@@ -189,31 +369,40 @@ main {
                                 }
                             }
               
-                            @media screen and (max-width: 320px) {
-                                th {
-                                    padding:5px;
-                                }
-
-                                .cart-info .p-cart {
-                                    display: none;
-                                }
-                            }
-
                             .p-cart {
+                                font-family: nth($f-family, 4);
                                 font-weight: 500;
+
+                                @media screen and (max-width: 320px) {
+
+                                        display: none;
+                                }
+                                
                             }
                         }
 
                         input {
+                            font-family: nth($f-family, 4);
                             text-align: center;
                             width: 30%;
                             height: 30px;
                             padding: 0px;
+
+                            
+                            @media screen and (max-width: 320px) {
+
+                                width: 50%;
+                        }
                         }
                   
                         a {
-                             color:green;
+                            color:green;
                             font-size: 1rem;
+                            
+                            @media screen and (max-width: 320px) {
+                                font-size: 0.9rem;
+                            }
+
                         }
                   
                         img {
@@ -232,8 +421,8 @@ main {
             border-top:1px solid #89a095;
             display: flex;
             justify-content: flex-end;
-            font-weight: 500;
-          
+            font-weight: 700;
+            font-family: nth($f-family, 4);
     
                 table {
                     margin: 1rem;

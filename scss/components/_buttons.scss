@@ -5,27 +5,27 @@ body {
     /*MAIN BUTTONS */
 
     .button {
-        font-family: 'Roboto',sans-serif;
+        font-family: nth($f-family, 4);
         font-size: 0.8rem;
         font-weight: 700;
         text-transform: uppercase;
         outline: none;
         border: none;
-        background-color: lightgreen;
-        color: black;
+        background-color: nth($colores,6);
+        color: nth($colores,2);
         padding: 10px 20px;
         cursor: pointer;
     }
 
     .button:hover {
-        font-family: 'Roboto',sans-serif;
+        font-family: nth($f-family, 4);
         font-size: 0.8rem;
         font-weight: 700;
         text-transform: uppercase;
         outline: none;
         border: none;
-        background-color:orange;
-        color: black;
+        background-color:nth($colores,4);
+        color: nth($colores,2);
         padding: 10px 20px;
         cursor: pointer;
         transition: 0.3s ease;
@@ -35,26 +35,26 @@ body {
     /*PRODUCTOS BUTTONS */
 
     .btn-outline {
-        font-family: "Roboto", sans-serif;
-        font-size: 0.8rem;
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 1);
         font-weight: 700;
         text-transform: uppercase;
         outline: none;
-        border: 1px solid lightgreen;
-        color: black;
+        border: 1px solid nth($colores,6);
+        color: nth($colores,2);
         padding: 10px 20px;
         cursor: pointer;
     }
     
     .btn-outline:hover {
-        font-family: "Roboto", sans-serif;
-        font-size: 0.8rem;
+        font-family: nth($f-family, 4);
+        font-size: nth($f-size, 1);
         font-weight: 700;
         text-transform: uppercase;
         outline: none;
-        border: 1px solid lightgreen;
-        background-color: orange;
-        color: black;
+        border: 1px solid nth($colores,6);
+        background-color: nth($colores,4);
+        color: nth($colores,2);
         padding: 10px 20px;
         cursor: pointer;
         transition: 0.3s ease;
@@ -62,13 +62,13 @@ body {
     
     @media only screen and (max-width: 280px) {
         .btn-outline {
-            font-family: "Roboto", sans-serif;
-            font-size: 0.8rem;
+            font-family: nth($f-family, 4);
+            font-size: nth($f-size, 1);
             font-weight: 700;
             text-transform: uppercase;
             outline: none;
-            border: 1px solid lightgreen;
-            color: black;
+            border: 1px solid nth($colores,6);
+            color: nth($colores,2);
             padding: 10px 20px;
             cursor: pointer;
             margin-top: 0;
@@ -82,8 +82,8 @@ body {
 
 
             #sticky-button {
-              
-                color: black;
+                font-family: nth($f-family, 4);
+                color: nth($colores,2);
                 padding: 10px 20px;
                 border-radius: 4px;
               
@@ -91,12 +91,12 @@ body {
               
             .sticky-btn {
                 position: fixed;
-                background-color: orange;
+                background-color: nth($colores,4);
                 padding: 10px;
                 bottom: 323px;
                 right: 60px;
                 border: none;
-                font-family: sans-serif;
+                font-family: nth($f-family, 4);
             }
 
             @media only screen and (max-width:640px) {
@@ -107,14 +107,14 @@ body {
 
             .sticky-btn:hover {
                 position: fixed;
-                background-color: green;
+                background-color: nth($colores,5);
                 padding: 10px;
                 bottom: 323px;
                 right: 60px;
                 border: none;
-                font-family: sans-serif;
+                font-family: nth($f-family, 4);
            
-                color: orange;
+                color: nth($colores,4);
                 text-shadow: 0 1.5em 50px;
                 transition:0.3s ease;
             }

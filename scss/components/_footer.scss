@@ -26,13 +26,13 @@
                     margin: map-get($p-footer, margin-footer);
                     padding: map-get($p-footer, padding-footer);
                     color: map-get($p-footer, color-footer);
-                    font-family: 'Roboto',sans-serif;
+                    font-family: nth($f-family, 4);
                     
                 
                 }
 
                 b {
-                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    font-family: nth($f-family, 4);
                     border:black;
                     margin: 0px;    
                 
@@ -55,7 +55,7 @@
                     
                         i {
     
-                            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                            font-family: nth($f-family, 4);
                             font-weight: lighter;
                             text-align: left;
                             color: rgb(143, 143, 143);

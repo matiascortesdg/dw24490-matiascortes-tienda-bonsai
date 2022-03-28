@@ -63,6 +63,14 @@ body header .navbar {
 body header .navbar .container-fluid .navbar-brand {
   /* Responsive LOGO */
 }
+@media only screen and (max-width: 320px) {
+  body header .navbar .container-fluid .navbar-brand {
+    font-size: 1rem;
+  }
+}
+body header .navbar .container-fluid .navbar-brand #header-logo {
+  width: 25%;
+}
 @media only screen and (max-width: 991px) {
   body header .navbar .container-fluid .navbar-brand #header-logo {
     width: 15%;
@@ -343,6 +351,14 @@ main .p-description {
   font-family: "Roboto";
   font-size: 1rem;
   text-align: center;
+}
+main a {
+  text-decoration: none;
+  color: black;
+}
+main a:hover {
+  text-decoration: none;
+  color: black;
 }
 main .product img {
   transition: 0.3s all;
@@ -915,6 +931,14 @@ main .p-description {
   font-family: "Roboto";
   font-size: 1rem;
   text-align: center;
+}
+main a {
+  text-decoration: none;
+  color: black;
+}
+main a:hover {
+  text-decoration: none;
+  color: black;
 }
 main .product img {
   transition: 0.3s all;
